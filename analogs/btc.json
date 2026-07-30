@@ -1,0 +1,165 @@
+{
+  "as_of": "2026-07-28",
+  "asset_id": "btc",
+  "calculation_version": "0.2.2",
+  "data_quality": {
+    "adjusted": false,
+    "error_message": null,
+    "fetched_at": "2026-07-30T03:48:20.236896+00:00",
+    "history_rows": 4333,
+    "history_start": "2014-09-17",
+    "history_years": 11.86,
+    "is_proxy": false,
+    "missed_sessions": 1,
+    "missing_fields": [
+      "etf_net_flow",
+      "funding_rate",
+      "futures_basis",
+      "open_interest",
+      "liquidation_volume",
+      "stablecoin_supply_change",
+      "exchange_netflow"
+    ],
+    "source": "yahoo_public",
+    "source_symbol": "BTC-USD",
+    "stale": false,
+    "stale_tolerance_sessions": 2,
+    "status": "partial",
+    "warnings": [
+      "extreme_daily_moves_flagged_for_review:1"
+    ]
+  },
+  "disclaimer": "Descriptive market statistics only. Not investment advice, not a recommendation, and not a forecast.",
+  "distance_score": 1.2029,
+  "excluded_recent_sessions": 20,
+  "generated_at": "2026-07-30T05:46:09.546247+00:00",
+  "horizons": {
+    "forward_120d": {
+      "median_additional_drawdown": -0.3533665353630026,
+      "median_return": -0.10071798193256892,
+      "positive_rate": 0.4444444444444444,
+      "sample_count": 18,
+      "worst_additional_drawdown": -0.5993395152604754,
+      "worst_return": -0.4682537501416002
+    },
+    "forward_20d": {
+      "median_additional_drawdown": -0.1288796843596679,
+      "median_return": 0.01625652059224114,
+      "positive_rate": 0.55,
+      "sample_count": 20,
+      "worst_additional_drawdown": -0.3314171135690148,
+      "worst_return": -0.31658746400530435
+    },
+    "forward_60d": {
+      "median_additional_drawdown": -0.2268488966122998,
+      "median_return": 0.0034771036981822157,
+      "positive_rate": 0.5263157894736842,
+      "sample_count": 19,
+      "worst_additional_drawdown": -0.529944695190178,
+      "worst_return": -0.4752213577885491
+    }
+  },
+  "method": "Euclidean distance over 10 expanding-z-scored state dimensions; matches must be separated by min_separation_days; forward windows that have not fully elapsed are excluded rather than padded.",
+  "min_separation_days": 20,
+  "missing_state_fields": [],
+  "notes": [],
+  "sample_count": 20,
+  "similar_dates": [
+    {
+      "date": "2026-04-06",
+      "distance_score": 0.6719
+    },
+    {
+      "date": "2022-04-25",
+      "distance_score": 0.8262
+    },
+    {
+      "date": "2023-10-09",
+      "distance_score": 0.9089
+    },
+    {
+      "date": "2020-07-17",
+      "distance_score": 1.0292
+    },
+    {
+      "date": "2026-01-11",
+      "distance_score": 1.048
+    },
+    {
+      "date": "2022-11-02",
+      "distance_score": 1.0789
+    },
+    {
+      "date": "2019-11-17",
+      "distance_score": 1.0844
+    },
+    {
+      "date": "2020-01-13",
+      "distance_score": 1.1176
+    },
+    {
+      "date": "2023-01-04",
+      "distance_score": 1.1547
+    },
+    {
+      "date": "2022-08-07",
+      "distance_score": 1.1921
+    },
+    {
+      "date": "2020-10-17",
+      "distance_score": 1.2223
+    },
+    {
+      "date": "2022-03-21",
+      "distance_score": 1.2985
+    },
+    {
+      "date": "2022-02-26",
+      "distance_score": 1.306
+    },
+    {
+      "date": "2018-10-02",
+      "distance_score": 1.3455
+    },
+    {
+      "date": "2020-04-26",
+      "distance_score": 1.3518
+    },
+    {
+      "date": "2018-11-02",
+      "distance_score": 1.363
+    },
+    {
+      "date": "2026-05-31",
+      "distance_score": 1.46
+    },
+    {
+      "date": "2019-12-07",
+      "distance_score": 1.5213
+    },
+    {
+      "date": "2022-09-08",
+      "distance_score": 1.5265
+    },
+    {
+      "date": "2021-08-03",
+      "distance_score": 1.5515
+    }
+  ],
+  "source_api": "market-data.expensesnap.online",
+  "source_as_of": "2026-07-28",
+  "state_fields": [
+    "price_vs_ma20_pct",
+    "price_vs_ma60_pct",
+    "price_vs_ma200_pct",
+    "ma60_slope_20d",
+    "ma200_slope_60d",
+    "drawdown",
+    "decline_5d",
+    "realized_vol_20d",
+    "regression_60d_slope",
+    "regression_60d_r2"
+  ],
+  "status": "ok",
+  "top_k": 20
+}

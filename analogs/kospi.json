@@ -1,0 +1,155 @@
+{
+  "as_of": "2026-07-29",
+  "asset_id": "kospi",
+  "calculation_version": "0.2.2",
+  "data_quality": {
+    "adjusted": false,
+    "error_message": null,
+    "fetched_at": "2026-07-30T03:48:23.972445+00:00",
+    "history_rows": 7293,
+    "history_start": "1996-12-11",
+    "history_years": 29.63,
+    "is_proxy": false,
+    "missed_sessions": 0,
+    "missing_fields": [],
+    "source": "yahoo_public",
+    "source_symbol": "^KS11",
+    "stale": false,
+    "stale_tolerance_sessions": 3,
+    "status": "complete",
+    "warnings": []
+  },
+  "disclaimer": "Descriptive market statistics only. Not investment advice, not a recommendation, and not a forecast.",
+  "distance_score": 7.3646,
+  "excluded_recent_sessions": 20,
+  "generated_at": "2026-07-30T05:46:09.546247+00:00",
+  "horizons": {
+    "forward_120d": {
+      "median_additional_drawdown": -0.18365345223587226,
+      "median_return": 0.09492324787067319,
+      "positive_rate": 0.7368421052631579,
+      "sample_count": 19,
+      "worst_additional_drawdown": -0.38388904643021704,
+      "worst_return": -0.22271520042113668
+    },
+    "forward_20d": {
+      "median_additional_drawdown": -0.05967190475701978,
+      "median_return": 0.08481832513392995,
+      "positive_rate": 0.95,
+      "sample_count": 20,
+      "worst_additional_drawdown": -0.19704612573727787,
+      "worst_return": -0.11204034601806268
+    },
+    "forward_60d": {
+      "median_additional_drawdown": -0.11648237979344894,
+      "median_return": 0.1261924051971296,
+      "positive_rate": 0.85,
+      "sample_count": 20,
+      "worst_additional_drawdown": -0.20742761124045206,
+      "worst_return": -0.06670764072515167
+    }
+  },
+  "method": "Euclidean distance over 10 expanding-z-scored state dimensions; matches must be separated by min_separation_days; forward windows that have not fully elapsed are excluded rather than padded.",
+  "min_separation_days": 20,
+  "missing_state_fields": [],
+  "notes": [],
+  "sample_count": 20,
+  "similar_dates": [
+    {
+      "date": "2020-03-23",
+      "distance_score": 5.5575
+    },
+    {
+      "date": "2024-08-05",
+      "distance_score": 5.9515
+    },
+    {
+      "date": "2008-10-24",
+      "distance_score": 6.0049
+    },
+    {
+      "date": "2026-03-31",
+      "distance_score": 6.5073
+    },
+    {
+      "date": "2007-08-17",
+      "distance_score": 6.5698
+    },
+    {
+      "date": "2011-08-09",
+      "distance_score": 6.6904
+    },
+    {
+      "date": "2000-04-17",
+      "distance_score": 6.9026
+    },
+    {
+      "date": "2001-09-17",
+      "distance_score": 7.0649
+    },
+    {
+      "date": "2025-04-09",
+      "distance_score": 7.4285
+    },
+    {
+      "date": "1999-10-05",
+      "distance_score": 7.7699
+    },
+    {
+      "date": "2004-05-17",
+      "distance_score": 7.8741
+    },
+    {
+      "date": "2011-09-26",
+      "distance_score": 7.9348
+    },
+    {
+      "date": "2022-01-27",
+      "distance_score": 7.9365
+    },
+    {
+      "date": "2000-09-18",
+      "distance_score": 7.9644
+    },
+    {
+      "date": "1999-07-26",
+      "distance_score": 8.0862
+    },
+    {
+      "date": "2002-10-10",
+      "distance_score": 8.1372
+    },
+    {
+      "date": "2008-01-22",
+      "distance_score": 8.1972
+    },
+    {
+      "date": "2000-10-17",
+      "distance_score": 8.2237
+    },
+    {
+      "date": "2007-11-21",
+      "distance_score": 8.2387
+    },
+    {
+      "date": "2008-11-24",
+      "distance_score": 8.2511
+    }
+  ],
+  "source_api": "market-data.expensesnap.online",
+  "source_as_of": "2026-07-29",
+  "state_fields": [
+    "price_vs_ma20_pct",
+    "price_vs_ma60_pct",
+    "price_vs_ma200_pct",
+    "ma60_slope_20d",
+    "ma200_slope_60d",
+    "drawdown",
+    "decline_5d",
+    "realized_vol_20d",
+    "regression_60d_slope",
+    "regression_60d_r2"
+  ],
+  "status": "ok",
+  "top_k": 20
+}

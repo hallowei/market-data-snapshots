@@ -1,0 +1,166 @@
+{
+  "as_of": "2026-07-29",
+  "asset_id": "csi300",
+  "calculation_version": "0.2.2",
+  "data_quality": {
+    "adjusted": false,
+    "error_message": null,
+    "fetched_at": "2026-07-30T05:02:12.780278+00:00",
+    "history_rows": 1306,
+    "history_start": "2021-03-11",
+    "history_years": 5.38,
+    "is_proxy": false,
+    "missed_sessions": 0,
+    "missing_fields": [
+      "advancing_count",
+      "declining_count",
+      "total_turnover",
+      "limit_up_count",
+      "limit_down_count",
+      "margin_balance_change",
+      "dividend_vs_growth"
+    ],
+    "source": "yahoo_public",
+    "source_symbol": "000300.SS+sh000300",
+    "stale": false,
+    "stale_tolerance_sessions": 4,
+    "status": "partial",
+    "warnings": [
+      "multiple_sources_in_one_series",
+      "history_shorter_than_10y_long_window_percentiles_may_be_null:5.4y"
+    ]
+  },
+  "disclaimer": "Descriptive market statistics only. Not investment advice, not a recommendation, and not a forecast.",
+  "distance_score": 3.4588,
+  "excluded_recent_sessions": 20,
+  "generated_at": "2026-07-30T05:46:09.546247+00:00",
+  "horizons": {
+    "forward_120d": {
+      "median_additional_drawdown": -0.11825934698423468,
+      "median_return": 0.04957823636096648,
+      "positive_rate": 0.6875,
+      "sample_count": 16,
+      "worst_additional_drawdown": -0.17389679700968563,
+      "worst_return": -0.12485495398740276
+    },
+    "forward_20d": {
+      "median_additional_drawdown": -0.027504568324995537,
+      "median_return": 0.013167658196709286,
+      "positive_rate": 0.65,
+      "sample_count": 20,
+      "worst_additional_drawdown": -0.10993165485247336,
+      "worst_return": -0.06323913448891305
+    },
+    "forward_60d": {
+      "median_additional_drawdown": -0.08505908850425142,
+      "median_return": -0.0025609897443422125,
+      "positive_rate": 0.5,
+      "sample_count": 18,
+      "worst_additional_drawdown": -0.14653218525971623,
+      "worst_return": -0.10230046244648949
+    }
+  },
+  "method": "Euclidean distance over 10 expanding-z-scored state dimensions; matches must be separated by min_separation_days; forward windows that have not fully elapsed are excluded rather than padded.",
+  "min_separation_days": 20,
+  "missing_state_fields": [],
+  "notes": [],
+  "sample_count": 20,
+  "similar_dates": [
+    {
+      "date": "2026-03-26",
+      "distance_score": 1.8293
+    },
+    {
+      "date": "2025-04-11",
+      "distance_score": 2.2359
+    },
+    {
+      "date": "2026-06-26",
+      "distance_score": 2.7479
+    },
+    {
+      "date": "2023-08-18",
+      "distance_score": 3.124
+    },
+    {
+      "date": "2025-11-25",
+      "distance_score": 3.1841
+    },
+    {
+      "date": "2026-05-21",
+      "distance_score": 3.2103
+    },
+    {
+      "date": "2026-02-02",
+      "distance_score": 3.242
+    },
+    {
+      "date": "2022-08-29",
+      "distance_score": 3.4975
+    },
+    {
+      "date": "2025-02-05",
+      "distance_score": 3.5213
+    },
+    {
+      "date": "2023-05-24",
+      "distance_score": 3.5243
+    },
+    {
+      "date": "2024-08-07",
+      "distance_score": 3.5337
+    },
+    {
+      "date": "2023-06-26",
+      "distance_score": 3.5973
+    },
+    {
+      "date": "2025-05-28",
+      "distance_score": 3.6936
+    },
+    {
+      "date": "2023-09-15",
+      "distance_score": 3.6951
+    },
+    {
+      "date": "2025-03-05",
+      "distance_score": 3.8381
+    },
+    {
+      "date": "2023-10-25",
+      "distance_score": 4.0182
+    },
+    {
+      "date": "2024-09-10",
+      "distance_score": 4.1109
+    },
+    {
+      "date": "2025-12-31",
+      "distance_score": 4.1799
+    },
+    {
+      "date": "2024-01-09",
+      "distance_score": 4.1954
+    },
+    {
+      "date": "2023-03-16",
+      "distance_score": 4.1968
+    }
+  ],
+  "source_api": "market-data.expensesnap.online",
+  "source_as_of": "2026-07-29",
+  "state_fields": [
+    "price_vs_ma20_pct",
+    "price_vs_ma60_pct",
+    "price_vs_ma200_pct",
+    "ma60_slope_20d",
+    "ma200_slope_60d",
+    "drawdown",
+    "decline_5d",
+    "realized_vol_20d",
+    "regression_60d_slope",
+    "regression_60d_r2"
+  ],
+  "status": "ok",
+  "top_k": 20
+}

@@ -1,0 +1,44 @@
+name: Update market snapshots
+
+on:
+  schedule:
+    - cron: "5 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-market-snapshots
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Export validated snapshots
+        run: |
+          python scripts/export_snapshots.py \
+            --base-url https://market-data.expensesnap.online \
+            --source-api market-data.expensesnap.online \
+            --output-dir .
+
+      - name: Commit changed snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add latest analogs metadata.json
+          if git diff --cached --quiet; then
+            echo "No snapshot changes"
+            exit 0
+          fi
+          git commit -m "Update market snapshots $(date -u +%F)"
+          git push
