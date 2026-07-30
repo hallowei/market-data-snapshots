@@ -9,11 +9,12 @@ import json
 import tempfile
 import time
 from collections.abc import Callable
-from datetime import UTC, datetime
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 ASSET_IDS = (
     "nasdaq100",
@@ -28,6 +29,7 @@ ASSET_IDS = (
 EXPORT_SCHEMA_VERSION = "1.0"
 USER_AGENT = "market-data-snapshot-exporter/1.0"
 MAX_FETCH_ATTEMPTS = 4
+PUBLISH_TIMEZONE = ZoneInfo("Asia/Shanghai")
 
 
 class SnapshotExportError(RuntimeError):
@@ -139,7 +141,7 @@ def export_snapshots(
     timeout: float = 30.0,
     fetcher: Callable[[str, str, float], dict[str, Any]] = fetch_json,
 ) -> dict[str, Any]:
-    generated_at = datetime.now(UTC).isoformat()
+    generated_at = datetime.now(PUBLISH_TIMEZONE).isoformat()
     all_assets = fetcher(base_url, "/v1/assets/latest", timeout)
     summaries = all_assets.get("assets")
     if not isinstance(summaries, list):
