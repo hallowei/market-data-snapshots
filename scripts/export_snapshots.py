@@ -7,10 +7,12 @@ import argparse
 import hashlib
 import json
 import tempfile
+import time
 from collections.abc import Callable
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 ASSET_IDS = (
@@ -25,6 +27,7 @@ ASSET_IDS = (
 )
 EXPORT_SCHEMA_VERSION = "1.0"
 USER_AGENT = "market-data-snapshot-exporter/1.0"
+MAX_FETCH_ATTEMPTS = 4
 
 
 class SnapshotExportError(RuntimeError):
@@ -37,11 +40,25 @@ def fetch_json(base_url: str, path: str, timeout: float) -> dict[str, Any]:
         url,
         headers={"Accept": "application/json", "User-Agent": USER_AGENT},
     )
-    with urlopen(request, timeout=timeout) as response:
-        content_type = response.headers.get_content_type()
-        if content_type != "application/json":
-            raise SnapshotExportError(f"{path}: expected application/json, got {content_type}")
-        payload = json.load(response)
+    payload: Any = None
+    for attempt in range(1, MAX_FETCH_ATTEMPTS + 1):
+        try:
+            with urlopen(request, timeout=timeout) as response:
+                content_type = response.headers.get_content_type()
+                if content_type != "application/json":
+                    raise SnapshotExportError(
+                        f"{path}: expected application/json, got {content_type}"
+                    )
+                payload = json.load(response)
+            break
+        except HTTPError as exc:
+            retryable = exc.code == 429 or exc.code >= 500
+            if not retryable or attempt == MAX_FETCH_ATTEMPTS:
+                raise SnapshotExportError(f"{path}: HTTP {exc.code}") from exc
+        except (TimeoutError, URLError) as exc:
+            if attempt == MAX_FETCH_ATTEMPTS:
+                raise SnapshotExportError(f"{path}: source connection failed") from exc
+        time.sleep(2 ** (attempt - 1))
     if not isinstance(payload, dict):
         raise SnapshotExportError(f"{path}: expected a JSON object")
     return payload
