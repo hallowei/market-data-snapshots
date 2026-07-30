@@ -18,6 +18,11 @@ auditability.
 Supported asset IDs: `nasdaq100`, `sp500`, `btc`, `nikkei225`, `kospi`,
 `csi300`, `wti`, and `gold`.
 
+For an atomic multi-file read, first request
+`https://api.github.com/repos/hallowei/market-data-snapshots/commits/main`,
+take its `sha`, and replace `main` in every Raw URL with that commit SHA. Verify
+each downloaded file against the SHA-256 recorded in `metadata.json`.
+
 ## Safety contract
 
 The publisher validates all eight assets before writing any files. A run fails
