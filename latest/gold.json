@@ -11,7 +11,7 @@
     "status": "none",
     "thresholds_are_empirical_conventions": true
   },
-  "as_of": "2026-07-30T16:00:00-04:00",
+  "as_of": "2026-07-31T16:00:00-04:00",
   "asset_id": "gold",
   "asset_specific": {
     "central_bank_purchase_proxy": {
@@ -20,13 +20,13 @@
       "value": null
     },
     "dxy": {
-      "as_of": "2026-07-30",
-      "change_20d": -0.01401516548163606,
-      "change_60d": 0.015222915920927615,
+      "as_of": "2026-07-31",
+      "change_20d": -0.010479865161080348,
+      "change_60d": 0.013434179546886194,
       "is_proxy": true,
       "sample_count": 551,
       "status": "ok",
-      "value": 99.96900177001953
+      "value": 99.8030014038086
     },
     "gold_etf_flow": {
       "reason": "requires_specialist_data_feed_not_available_in_p0",
@@ -34,13 +34,13 @@
       "value": null
     },
     "gold_silver_ratio": {
-      "as_of": "2026-07-30",
-      "change_20d": 0.038322227796806274,
-      "change_60d": 0.13668378155927274,
+      "as_of": "2026-07-31",
+      "change_20d": 0.0460422289701492,
+      "change_60d": 0.13840255584772687,
       "is_proxy": true,
       "sample_count": 551,
       "status": "ok",
-      "value": 70.30384346193169
+      "value": 70.9407181204553
     },
     "note": "Computed entries are price-derived proxies (is_proxy=true). Reserved entries are unavailable in P0 and are not estimated from price.",
     "real_yield": {
@@ -83,13 +83,13 @@
       "value": null
     },
     "dxy": {
-      "as_of": "2026-07-30",
-      "change_20d": -0.01401516548163606,
-      "change_60d": 0.015222915920927615,
+      "as_of": "2026-07-31",
+      "change_20d": -0.010479865161080348,
+      "change_60d": 0.013434179546886194,
       "is_proxy": true,
       "sample_count": 551,
       "status": "ok",
-      "value": 99.96900177001953
+      "value": 99.8030014038086
     },
     "is_proxy": true,
     "semis_relative_strength_smh_qqq": {
@@ -98,34 +98,39 @@
       "value": null
     },
     "vix": {
-      "as_of": "2026-07-30",
-      "change_20d": 0.03013863745637191,
-      "change_60d": -0.016685789538664175,
+      "as_of": "2026-07-31",
+      "change_20d": -0.009907111528877577,
+      "change_60d": -0.08050601884227992,
       "is_proxy": true,
       "sample_count": 550,
       "status": "ok",
-      "value": 17.09000015258789
+      "value": 15.989999771118164
     }
   },
   "currency": "USD",
   "data_quality": {
     "adjusted": false,
     "error_message": null,
-    "fetched_at": "2026-07-30T23:30:21.103485+00:00",
-    "history_rows": 6502,
+    "fetched_at": "2026-07-31T23:30:22.963406+00:00",
+    "history_rows": 6503,
     "history_start": "2000-08-30",
-    "history_years": 25.91,
+    "history_years": 25.92,
     "is_proxy": true,
     "missed_sessions": 0,
     "missing_fields": [
-      "gold_futures_used_as_xauusd_proxy: no key-free XAU/USD spot feed is available in P0; futures track spot closely but are not identical"
+      "gold_futures_used_as_xauusd_proxy: no key-free XAU/USD spot feed is available in P0; futures track spot closely but are not identical",
+      "real_yield",
+      "gold_etf_flow",
+      "central_bank_purchase_proxy"
     ],
     "source": "yahoo_public",
     "source_symbol": "GC=F",
     "stale": false,
     "stale_tolerance_sessions": 2,
-    "status": "complete",
-    "warnings": []
+    "status": "partial",
+    "warnings": [
+      "volume_scale_shift_ratio:443"
+    ]
   },
   "disclaimer": "Descriptive market statistics only. Not investment advice, not a recommendation, and not a forecast.",
   "downside_nature": {
@@ -160,7 +165,7 @@
     "note": "P0 does not assert decline causation. Price-derived items appear under market_pricing_evidence; verified_evidence stays empty until fundamental data is wired in.",
     "valuation_kill": {
       "market_pricing_evidence": [
-        "price_is_-21.7%_below_peak"
+        "price_is_-22.9%_below_peak"
       ],
       "missing_confirmation": [
         "point_in_time_valuation_multiples_unavailable"
@@ -171,46 +176,46 @@
     }
   },
   "drawdown": {
-    "days_since_peak": 125.0,
+    "days_since_peak": 126.0,
     "decline_10d": 0.0,
     "decline_3d": 0.0,
     "decline_5d": 0.0,
-    "drawdown": -0.21690736,
-    "drawdown_duration_days": 125.0,
-    "drawdown_speed_20d": 0.01814451,
-    "drawdown_speed_5d": 0.02222467,
+    "drawdown": -0.22935466,
+    "drawdown_duration_days": 126.0,
+    "drawdown_speed_20d": -0.00265119,
+    "drawdown_speed_5d": 0.00582882,
     "max_drawdown_1y": -0.25060165,
     "max_drawdown_3y": -0.25060165,
     "rolling_high": 5318.39990234
   },
-  "generated_at": "2026-07-31T11:33:33.056601+08:00",
+  "generated_at": "2026-08-01T07:31:32.156724+08:00",
   "historical_analogs": {
-    "distance_score": 2.4776,
+    "distance_score": 2.3754,
     "excluded_recent_sessions": 20,
     "horizons": {
       "forward_120d": {
-        "median_additional_drawdown": -0.07680291395920968,
+        "median_additional_drawdown": -0.07254186131532225,
         "median_return": 0.08071585857952801,
         "positive_rate": 0.7368421052631579,
         "sample_count": 19,
         "worst_additional_drawdown": -0.27902217897814896,
-        "worst_return": -0.2234218189552183
+        "worst_return": -0.13777081595859497
       },
       "forward_20d": {
-        "median_additional_drawdown": -0.03141982546772998,
-        "median_return": 0.0028066026851373826,
-        "positive_rate": 0.5,
+        "median_additional_drawdown": -0.02949441466046976,
+        "median_return": 0.024825447218609797,
+        "positive_rate": 0.65,
         "sample_count": 20,
-        "worst_additional_drawdown": -0.10705541719218492,
-        "worst_return": -0.09289489873449797
+        "worst_additional_drawdown": -0.1568968060361945,
+        "worst_return": -0.1456201095221743
       },
       "forward_60d": {
         "median_additional_drawdown": -0.06492502460181848,
         "median_return": 0.02019735674701395,
-        "positive_rate": 0.631578947368421,
+        "positive_rate": 0.5789473684210527,
         "sample_count": 19,
         "worst_additional_drawdown": -0.19607242488858445,
-        "worst_return": -0.1073042008419045
+        "worst_return": -0.1353218210361068
       }
     },
     "min_separation_days": 20,
@@ -219,84 +224,84 @@
     "sample_count": 20,
     "similar_dates": [
       {
-        "date": "2004-05-28",
-        "distance_score": 1.6355
+        "date": "2004-06-02",
+        "distance_score": 1.6442
       },
       {
         "date": "2021-03-24",
-        "distance_score": 2.0532
+        "distance_score": 1.7959
+      },
+      {
+        "date": "2016-12-29",
+        "distance_score": 1.9552
       },
       {
         "date": "2002-08-26",
-        "distance_score": 2.1165
+        "distance_score": 2.0571
       },
       {
-        "date": "2017-01-05",
-        "distance_score": 2.1664
+        "date": "2022-07-28",
+        "distance_score": 2.0668
       },
       {
-        "date": "2022-07-29",
-        "distance_score": 2.2133
+        "date": "2003-04-28",
+        "distance_score": 2.2278
       },
       {
-        "date": "2003-04-24",
-        "distance_score": 2.2589
+        "date": "2001-12-19",
+        "distance_score": 2.3
       },
       {
-        "date": "2012-01-12",
-        "distance_score": 2.3138
+        "date": "2012-01-19",
+        "distance_score": 2.3315
       },
       {
         "date": "2012-06-01",
-        "distance_score": 2.3529
-      },
-      {
-        "date": "2006-10-19",
-        "distance_score": 2.3967
-      },
-      {
-        "date": "2001-12-20",
-        "distance_score": 2.4031
+        "distance_score": 2.3808
       },
       {
         "date": "2026-06-17",
-        "distance_score": 2.4749
+        "distance_score": 2.3949
       },
       {
-        "date": "2012-04-27",
-        "distance_score": 2.6084
-      },
-      {
-        "date": "2016-11-01",
-        "distance_score": 2.7089
-      },
-      {
-        "date": "2022-11-04",
-        "distance_score": 2.7128
+        "date": "2012-05-02",
+        "distance_score": 2.4149
       },
       {
         "date": "2007-07-06",
-        "distance_score": 2.7137
+        "distance_score": 2.5046
       },
       {
-        "date": "2008-05-27",
-        "distance_score": 2.7428
+        "date": "2006-10-19",
+        "distance_score": 2.5175
       },
       {
-        "date": "2022-06-16",
-        "distance_score": 2.7894
+        "date": "2022-10-21",
+        "distance_score": 2.5394
+      },
+      {
+        "date": "2016-10-31",
+        "distance_score": 2.5904
+      },
+      {
+        "date": "2022-06-23",
+        "distance_score": 2.6716
+      },
+      {
+        "date": "2018-08-24",
+        "distance_score": 2.6889
       },
       {
         "date": "2005-02-16",
-        "distance_score": 2.9296
+        "distance_score": 2.7701
       },
       {
-        "date": "2018-08-27",
-        "distance_score": 2.9574
+        "date": "2008-06-06",
+        "distance_score": 2.7789
       },
       {
-        "date": "2004-03-16",
-        "distance_score": 3.0039
+        "date": "2013-03-15",
+        "distance_score": 2.8783
       }
     ],
     "state_fields": [
@@ -319,32 +324,32 @@
       "10y": {
         "insufficient_history": false,
         "min_samples_required": 1500,
-        "percentile": 0.7187,
+        "percentile": 0.7185,
         "sample_count": 2520
       },
       "1y": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.7163,
+        "percentile": 0.7143,
         "sample_count": 252
       },
       "3y": {
         "insufficient_history": false,
         "min_samples_required": 500,
-        "percentile": 0.6984,
+        "percentile": 0.6978,
         "sample_count": 756
       },
       "5y": {
         "insufficient_history": false,
         "min_samples_required": 800,
-        "percentile": 0.7151,
+        "percentile": 0.7147,
         "sample_count": 1260
       },
       "all": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.7213,
-        "sample_count": 6497
+        "percentile": 0.7212,
+        "sample_count": 6498
       },
       "value": 0.0
     },
@@ -352,205 +357,106 @@
       "10y": {
         "insufficient_history": false,
         "min_samples_required": 1500,
-        "percentile": 0.1119,
+        "percentile": 0.0766,
         "sample_count": 2520
       },
       "1y": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.0516,
+        "percentile": 0.0238,
         "sample_count": 252
       },
       "3y": {
         "insufficient_history": false,
         "min_samples_required": 500,
-        "percentile": 0.0278,
+        "percentile": 0.0146,
         "sample_count": 756
       },
       "5y": {
         "insufficient_history": false,
         "min_samples_required": 800,
-        "percentile": 0.0762,
+        "percentile": 0.0548,
         "sample_count": 1260
       },
       "all": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.1052,
-        "sample_count": 6303
+        "percentile": 0.0706,
+        "sample_count": 6304
       },
-      "value": -4.652037545346376
+      "value": -5.749604896659187
     },
     "distance_ma20_atr": {
       "10y": {
         "insufficient_history": false,
         "min_samples_required": 1500,
-        "percentile": 0.6948,
+        "percentile": 0.5294,
         "sample_count": 2520
       },
       "1y": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.7063,
+        "percentile": 0.5198,
         "sample_count": 252
       },
       "3y": {
         "insufficient_history": false,
         "min_samples_required": 500,
-        "percentile": 0.6521,
+        "percentile": 0.4762,
         "sample_count": 756
       },
       "5y": {
         "insufficient_history": false,
         "min_samples_required": 800,
-        "percentile": 0.6762,
+        "percentile": 0.5135,
         "sample_count": 1260
       },
       "all": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.6735,
-        "sample_count": 6483
+        "percentile": 0.5211,
+        "sample_count": 6484
       },
-      "value": 1.3455999138412202
+      "value": 0.4366429621849126
     },
     "distance_ma60_atr": {
       "10y": {
         "insufficient_history": false,
         "min_samples_required": 1500,
-        "percentile": 0.2258,
+        "percentile": 0.15,
         "sample_count": 2520
       },
       "1y": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.2817,
+        "percentile": 0.2302,
         "sample_count": 252
       },
       "3y": {
         "insufficient_history": false,
         "min_samples_required": 500,
-        "percentile": 0.1376,
+        "percentile": 0.0979,
         "sample_count": 756
       },
       "5y": {
         "insufficient_history": false,
         "min_samples_required": 800,
-        "percentile": 0.1992,
+        "percentile": 0.131,
         "sample_count": 1260
       },
       "all": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.2201,
-        "sample_count": 6443
+        "percentile": 0.1443,
+        "sample_count": 6444
       },
-      "value": -1.7749359347138336
+      "value": -2.6822527102279574
     },
     "drawdown": {
       "10y": {
         "insufficient_history": false,
         "min_samples_required": 1500,
-        "percentile": 0.3286,
-        "sample_count": 2520
-      },
-      "1y": {
-        "insufficient_history": false,
-        "min_samples_required": 200,
-        "percentile": 0.1151,
-        "sample_count": 252
-      },
-      "3y": {
-        "insufficient_history": false,
-        "min_samples_required": 500,
-        "percentile": 0.0384,
-        "sample_count": 756
-      },
-      "5y": {
-        "insufficient_history": false,
-        "min_samples_required": 800,
-        "percentile": 0.023,
-        "sample_count": 1260
-      },
-      "all": {
-        "insufficient_history": false,
-        "min_samples_required": 200,
-        "percentile": 0.2599,
-        "sample_count": 6502
-      },
-      "value": -0.21690736289835466
-    },
-    "realized_vol_20d": {
-      "10y": {
-        "insufficient_history": false,
-        "min_samples_required": 1500,
-        "percentile": 0.9087,
-        "sample_count": 2520
-      },
-      "1y": {
-        "insufficient_history": false,
-        "min_samples_required": 200,
-        "percentile": 0.5357,
-        "sample_count": 252
-      },
-      "3y": {
-        "insufficient_history": false,
-        "min_samples_required": 500,
-        "percentile": 0.7976,
-        "sample_count": 756
-      },
-      "5y": {
-        "insufficient_history": false,
-        "min_samples_required": 800,
-        "percentile": 0.8786,
-        "sample_count": 1260
-      },
-      "all": {
-        "insufficient_history": false,
-        "min_samples_required": 200,
-        "percentile": 0.8868,
-        "sample_count": 6482
-      },
-      "value": 0.2388811127870126
-    },
-    "regression_60d_r2": {
-      "10y": {
-        "insufficient_history": false,
-        "min_samples_required": 1500,
-        "percentile": 0.8476,
-        "sample_count": 2520
-      },
-      "1y": {
-        "insufficient_history": false,
-        "min_samples_required": 200,
-        "percentile": 0.7024,
-        "sample_count": 252
-      },
-      "3y": {
-        "insufficient_history": false,
-        "min_samples_required": 500,
-        "percentile": 0.7751,
-        "sample_count": 756
-      },
-      "5y": {
-        "insufficient_history": false,
-        "min_samples_required": 800,
-        "percentile": 0.846,
-        "sample_count": 1260
-      },
-      "all": {
-        "insufficient_history": false,
-        "min_samples_required": 200,
-        "percentile": 0.8774,
-        "sample_count": 6443
-      },
-      "value": 0.8258067824665049
-    },
-    "regression_60d_slope": {
-      "10y": {
-        "insufficient_history": false,
-        "min_samples_required": 1500,
-        "percentile": 0.0083,
+        "percentile": 0.3115,
         "sample_count": 2520
       },
       "1y": {
@@ -574,79 +480,178 @@
       "all": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.0071,
-        "sample_count": 6443
+        "percentile": 0.251,
+        "sample_count": 6503
       },
-      "value": -0.0028976123983659023
+      "value": -0.2293546606282747
+    },
+    "realized_vol_20d": {
+      "10y": {
+        "insufficient_history": false,
+        "min_samples_required": 1500,
+        "percentile": 0.875,
+        "sample_count": 2520
+      },
+      "1y": {
+        "insufficient_history": false,
+        "min_samples_required": 200,
+        "percentile": 0.4167,
+        "sample_count": 252
+      },
+      "3y": {
+        "insufficient_history": false,
+        "min_samples_required": 500,
+        "percentile": 0.7421,
+        "sample_count": 756
+      },
+      "5y": {
+        "insufficient_history": false,
+        "min_samples_required": 800,
+        "percentile": 0.8325,
+        "sample_count": 1260
+      },
+      "all": {
+        "insufficient_history": false,
+        "min_samples_required": 200,
+        "percentile": 0.8294,
+        "sample_count": 6483
+      },
+      "value": 0.2143141373391022
+    },
+    "regression_60d_r2": {
+      "10y": {
+        "insufficient_history": false,
+        "min_samples_required": 1500,
+        "percentile": 0.8464,
+        "sample_count": 2520
+      },
+      "1y": {
+        "insufficient_history": false,
+        "min_samples_required": 200,
+        "percentile": 0.6984,
+        "sample_count": 252
+      },
+      "3y": {
+        "insufficient_history": false,
+        "min_samples_required": 500,
+        "percentile": 0.7725,
+        "sample_count": 756
+      },
+      "5y": {
+        "insufficient_history": false,
+        "min_samples_required": 800,
+        "percentile": 0.8444,
+        "sample_count": 1260
+      },
+      "all": {
+        "insufficient_history": false,
+        "min_samples_required": 200,
+        "percentile": 0.8763,
+        "sample_count": 6444
+      },
+      "value": 0.8250922314474858
+    },
+    "regression_60d_slope": {
+      "10y": {
+        "insufficient_history": false,
+        "min_samples_required": 1500,
+        "percentile": 0.0087,
+        "sample_count": 2520
+      },
+      "1y": {
+        "insufficient_history": false,
+        "min_samples_required": 200,
+        "percentile": 0.0873,
+        "sample_count": 252
+      },
+      "3y": {
+        "insufficient_history": false,
+        "min_samples_required": 500,
+        "percentile": 0.0291,
+        "sample_count": 756
+      },
+      "5y": {
+        "insufficient_history": false,
+        "min_samples_required": 800,
+        "percentile": 0.0175,
+        "sample_count": 1260
+      },
+      "all": {
+        "insufficient_history": false,
+        "min_samples_required": 200,
+        "percentile": 0.0073,
+        "sample_count": 6444
+      },
+      "value": -0.0028864194978469246
     },
     "return_20d": {
       "10y": {
         "insufficient_history": false,
         "min_samples_required": 1500,
-        "percentile": 0.6603,
+        "percentile": 0.3913,
         "sample_count": 2520
       },
       "1y": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.5079,
+        "percentile": 0.381,
         "sample_count": 252
       },
       "3y": {
         "insufficient_history": false,
         "min_samples_required": 500,
-        "percentile": 0.5357,
+        "percentile": 0.291,
         "sample_count": 756
       },
       "5y": {
         "insufficient_history": false,
         "min_samples_required": 800,
-        "percentile": 0.6087,
+        "percentile": 0.3516,
         "sample_count": 1260
       },
       "all": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.6398,
-        "sample_count": 6482
+        "percentile": 0.3994,
+        "sample_count": 6483
       },
-      "value": 0.023719921023812374
+      "value": -0.00342842827987333
     },
     "return_60d": {
       "10y": {
         "insufficient_history": false,
         "min_samples_required": 1500,
-        "percentile": 0.0623,
+        "percentile": 0.0333,
         "sample_count": 2520
       },
       "1y": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.1984,
+        "percentile": 0.1825,
         "sample_count": 252
       },
       "3y": {
         "insufficient_history": false,
         "min_samples_required": 500,
-        "percentile": 0.0661,
+        "percentile": 0.0608,
         "sample_count": 756
       },
       "5y": {
         "insufficient_history": false,
         "min_samples_required": 800,
-        "percentile": 0.0675,
+        "percentile": 0.0452,
         "sample_count": 1260
       },
       "all": {
         "insufficient_history": false,
         "min_samples_required": 200,
-        "percentile": 0.0678,
-        "sample_count": 6442
+        "percentile": 0.0365,
+        "sample_count": 6443
       },
-      "value": -0.07848217619482245
+      "value": -0.10035553067121905
     }
   },
-  "last_session": "2026-07-30",
+  "last_session": "2026-07-31",
   "name": "黄金",
   "panic": {
     "missing_confirmation": [
@@ -657,48 +662,48 @@
     "score": 26,
     "thresholds_are_empirical_conventions": true,
     "verified_evidence": [
-      "realized_vol_20d_at_89%_of_full_history",
-      "drawdown_-21.7%"
+      "realized_vol_20d_at_83%_of_full_history",
+      "drawdown_-22.9%"
     ]
   },
   "price": {
-    "close": 4164.79980469,
+    "close": 4098.60009766,
     "high": 4170.70019531,
-    "low": 4158.0,
+    "low": 4076.39990234,
     "open": 4163.89990234,
-    "volume": 1754.0
+    "volume": 106211.0
   },
   "source_api": "market-data.expensesnap.online",
-  "source_as_of": "2026-07-30",
+  "source_as_of": "2026-07-31",
   "timezone": "America/New_York",
   "trade_proxy": "GLD",
   "trade_proxy_note": "Auxiliary reference only. The trade proxy is never substituted for benchmark history; tracking differences and roll/expense effects are real.",
   "trend": {
-    "ema20": 4087.96568462,
-    "ma20": 4073.59501953,
-    "ma200": 4480.11498901,
-    "ma200_slope_20d": 0.00583493,
-    "ma200_slope_60d": 0.05158885,
-    "ma20_slope_20d": -0.03039308,
-    "ma20_slope_5d": 0.00190859,
-    "ma250": 4302.62998926,
-    "ma60": 4285.10499268,
-    "ma60_slope_20d": -0.04721312,
-    "ma60_slope_60d": -0.11661284,
-    "price_vs_ma200_pct": -0.07038105,
-    "price_vs_ma20_pct": 0.02238926,
-    "price_vs_ma60_pct": -0.0280752,
-    "regression_120d_r2": 0.84225958,
-    "regression_120d_slope": -0.00215985,
-    "regression_60d_r2": 0.82580678,
-    "regression_60d_slope": -0.00289761,
-    "return_10d": 0.04496179,
-    "return_120d": -0.14329208,
-    "return_1d": 0.03224524,
-    "return_20d": 0.02371992,
-    "return_250d": 0.26466655,
-    "return_5d": 0.02920963,
-    "return_60d": -0.07848218
+    "ema20": 4083.40345441,
+    "ma20": 4069.6550293,
+    "ma200": 4479.74149048,
+    "ma200_slope_20d": 0.00526527,
+    "ma200_slope_60d": 0.05001895,
+    "ma20_slope_20d": -0.02758127,
+    "ma20_slope_5d": 0.00048308,
+    "ma250": 4305.37479102,
+    "ma60": 4276.40666911,
+    "ma60_slope_20d": -0.04722501,
+    "ma60_slope_60d": -0.1172067,
+    "price_vs_ma200_pct": -0.08508111,
+    "price_vs_ma20_pct": 0.00711241,
+    "price_vs_ma60_pct": -0.0415785,
+    "regression_120d_r2": 0.8465353,
+    "regression_120d_slope": -0.00217439,
+    "regression_60d_r2": 0.82509223,
+    "regression_60d_slope": -0.00288642,
+    "return_10d": 0.02140707,
+    "return_120d": -0.17220069,
+    "return_1d": -0.00036584,
+    "return_20d": -0.00342843,
+    "return_250d": 0.2243033,
+    "return_5d": 0.0076212,
+    "return_60d": -0.10035553
   },
   "upside_quality": {
     "confidence": 0.75,
@@ -715,19 +720,18 @@
     "status": "uncertain",
     "thresholds_are_empirical_conventions": true,
     "verified_evidence": [
-      "return_20d_is_positive",
       "trend_regression_is_orderly",
       "volatility_is_not_rising_materially"
     ]
   },
   "volatility": {
-    "atr20": 67.78001709,
-    "distance_ma200_atr": -4.65203755,
-    "distance_ma20_atr": 1.34559991,
-    "distance_ma60_atr": -1.77493593,
-    "realized_vol_120d": 0.27946621,
-    "realized_vol_20d": 0.23888111,
-    "realized_vol_20d_change_20d": -0.21606813,
-    "realized_vol_60d": 0.24766385
+    "atr20": 66.29001465,
+    "distance_ma200_atr": -5.7496049,
+    "distance_ma20_atr": 0.43664296,
+    "distance_ma60_atr": -2.68225271,
+    "realized_vol_120d": 0.27495212,
+    "realized_vol_20d": 0.21431414,
+    "realized_vol_20d_change_20d": -0.30540678,
+    "realized_vol_60d": 0.23988832
   }
 }
