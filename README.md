@@ -1,8 +1,8 @@
 # Market Data Snapshots
 
-Public, read-only JSON mirror of the Market Data Service. The repository is
-updated every day at approximately 08:05 Asia/Shanghai and keeps Git history for
-auditability.
+Public, read-only JSON mirror of the Market Data Service. The production server
+publishes it every day at approximately 07:45 Asia/Shanghai; the GitHub workflow
+is retained for manual recovery only. Git history provides an audit trail.
 
 ## Stable URLs
 
