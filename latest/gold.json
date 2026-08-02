@@ -24,7 +24,7 @@
       "change_20d": -0.010509593021804542,
       "change_60d": 0.013403733243590343,
       "is_proxy": true,
-      "sample_count": 550,
+      "sample_count": 549,
       "status": "ok",
       "value": 99.80000305175781
     },
@@ -38,15 +38,21 @@
       "change_20d": 0.03671058664823512,
       "change_60d": 0.12824697591479972,
       "is_proxy": true,
-      "sample_count": 550,
+      "sample_count": 549,
       "status": "ok",
       "value": 70.30786278323669
     },
     "note": "Computed entries are price-derived proxies (is_proxy=true). Reserved entries are unavailable in P0 and are not estimated from price.",
     "real_yield": {
-      "reason": "requires_specialist_data_feed_not_available_in_p0",
-      "status": "unavailable",
-      "value": null
+      "as_of": "2026-07-30",
+      "frequency": "D",
+      "is_proxy": false,
+      "provider": "fred_alfred",
+      "retrieved_at": "2026-08-02T02:08:23.853939+00:00",
+      "source_series_id": "DFII10",
+      "status": "ok",
+      "units": "%",
+      "value": 2.41
     }
   },
   "benchmark": "Gold front-month futures (XAU/USD proxy)",
@@ -75,7 +81,7 @@
     },
     "status": "unavailable"
   },
-  "calculation_version": "1.1.0",
+  "calculation_version": "1.1.2",
   "cross_asset": {
     "credit_hyg_lqd_ratio": {
       "reason": "credit_proxy_not_mapped",
@@ -87,7 +93,7 @@
       "change_20d": -0.010509593021804542,
       "change_60d": 0.013403733243590343,
       "is_proxy": true,
-      "sample_count": 550,
+      "sample_count": 549,
       "status": "ok",
       "value": 99.80000305175781
     },
@@ -102,19 +108,18 @@
       "change_20d": -0.009907111528877577,
       "change_60d": -0.08050601884227992,
       "is_proxy": true,
-      "sample_count": 549,
+      "sample_count": 548,
       "status": "ok",
       "value": 15.989999771118164
     }
   },
   "currency": "USD",
   "data_quality": {
-    "fetched_at": "2026-08-01T14:47:27.159033+00:00",
+    "fetched_at": "2026-08-02T02:09:00.876889+00:00",
     "is_proxy": true,
     "missed_sessions": 0,
     "missing_fields": [
       "gold_futures_used_as_xauusd_proxy: no key-free XAU/USD spot feed is available in P0; futures track spot closely but are not identical",
-      "real_yield",
       "gold_etf_flow",
       "central_bank_purchase_proxy"
     ],
@@ -179,7 +184,7 @@
     "max_drawdown_3y": -0.25060165,
     "rolling_high": 5318.39990234
   },
-  "generated_at": "2026-08-01T22:47:30.942537+08:00",
+  "generated_at": "2026-08-02T10:10:05.270787+08:00",
   "historical_analogs": {
     "distance_score": 2.459,
     "excluded_recent_sessions": 20,
@@ -643,6 +648,8 @@
     }
   },
   "last_session": "2026-07-31",
+  "market_closed": true,
+  "market_status": "closed",
   "momentum": {
     "return_120d": -0.18219827,
     "return_1d": -0.01243872,
@@ -652,6 +659,7 @@
     "return_60d": -0.1112208
   },
   "name": "黄金",
+  "next_expected_session": "2026-08-03",
   "panic": {
     "missing_confirmation": [
       "credit_spread_proxy_unavailable",
@@ -675,7 +683,7 @@
     "return_60d": -0.1112208
   },
   "schema_version": "1.0",
-  "snapshot_id": "gsc-20260801T144738131006Z-v1.1.0",
+  "snapshot_id": "gsc-20260802T021012666930Z-v1.1.2",
   "source_api": "market-data.expensesnap.online",
   "source_as_of": "2026-07-31",
   "timezone": "America/New_York",

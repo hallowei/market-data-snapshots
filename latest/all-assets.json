@@ -7,7 +7,7 @@
       "benchmark": "NDX",
       "close": 28274.19921875,
       "data_quality": {
-        "fetched_at": "2026-08-01T14:47:04.994303+00:00",
+        "fetched_at": "2026-08-02T02:08:29.411627+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -29,7 +29,7 @@
       "benchmark": "SPX",
       "close": 7489.72021484,
       "data_quality": {
-        "fetched_at": "2026-08-01T14:47:10.328187+00:00",
+        "fetched_at": "2026-08-02T02:08:37.069128+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -46,19 +46,16 @@
       "source_as_of": "2026-07-31"
     },
     {
-      "as_of": "2026-07-31T00:00:00+00:00",
+      "as_of": "2026-08-01T00:00:00+00:00",
       "asset_id": "btc",
       "benchmark": "BTC/USDT spot composite",
-      "close": 62887.88,
+      "close": 62823.64,
       "data_quality": {
-        "fetched_at": "2026-08-01T14:47:13.842586+00:00",
+        "fetched_at": "2026-08-02T02:08:43.183013+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [
           "etf_net_flow",
-          "funding_rate",
-          "futures_basis",
-          "open_interest",
           "liquidation_volume",
           "stablecoin_supply_change",
           "exchange_netflow"
@@ -72,11 +69,11 @@
           "multiple_sources_in_one_series"
         ]
       },
-      "drawdown": -0.49551888,
+      "drawdown": -0.49603421,
       "name": "比特币",
-      "return_1d": -0.0292087,
-      "return_20d": -0.01459001,
-      "source_as_of": "2026-07-31"
+      "return_1d": -0.0010215,
+      "return_20d": -0.01499467,
+      "source_as_of": "2026-08-01"
     },
     {
       "as_of": "2026-07-31T15:00:00+09:00",
@@ -84,7 +81,7 @@
       "benchmark": "Nikkei 225",
       "close": 64362.01953125,
       "data_quality": {
-        "fetched_at": "2026-08-01T14:47:15.889637+00:00",
+        "fetched_at": "2026-08-02T02:08:45.750541+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -106,7 +103,7 @@
       "benchmark": "KOSPI",
       "close": 6595.45019531,
       "data_quality": {
-        "fetched_at": "2026-08-01T14:47:19.251058+00:00",
+        "fetched_at": "2026-08-02T02:08:50.239099+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -114,7 +111,9 @@
         "source_symbol": "^KS11",
         "stale": false,
         "status": "complete",
-        "warnings": []
+        "warnings": [
+          "finance_data_reader_krx_extreme_move_verified"
+        ]
       },
       "drawdown": -0.27638223,
       "name": "韩国股市",
@@ -128,7 +127,7 @@
       "benchmark": "沪深300",
       "close": 4588.1968,
       "data_quality": {
-        "fetched_at": "2026-08-01T14:47:22.585240+00:00",
+        "fetched_at": "2026-08-02T02:08:55.518081+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -150,7 +149,7 @@
       "benchmark": "WTI front-month continuous",
       "close": 84.66999817,
       "data_quality": {
-        "fetched_at": "2026-08-01T14:47:24.842999+00:00",
+        "fetched_at": "2026-08-02T02:08:57.865049+00:00",
         "is_proxy": true,
         "missed_sessions": 0,
         "missing_fields": [
@@ -158,7 +157,6 @@
           "second_month_price",
           "calendar_spread",
           "contango_backwardation",
-          "crude_inventory",
           "product_inventory",
           "crack_spread"
         ],
@@ -183,12 +181,11 @@
       "benchmark": "Gold front-month futures (XAU/USD proxy)",
       "close": 4049.10009766,
       "data_quality": {
-        "fetched_at": "2026-08-01T14:47:27.159033+00:00",
+        "fetched_at": "2026-08-02T02:09:00.876889+00:00",
         "is_proxy": true,
         "missed_sessions": 0,
         "missing_fields": [
           "gold_futures_used_as_xauusd_proxy: no key-free XAU/USD spot feed is available in P0; futures track spot closely but are not identical",
-          "real_yield",
           "gold_etf_flow",
           "central_bank_purchase_proxy"
         ],
@@ -207,7 +204,7 @@
       "source_as_of": "2026-07-31"
     }
   ],
-  "calculation_version": "1.1.0",
+  "calculation_version": "1.1.2",
   "data_quality": {
     "is_proxy": true,
     "missed_sessions": 0,
@@ -216,18 +213,13 @@
       "central_bank_purchase_proxy",
       "contango_backwardation",
       "crack_spread",
-      "crude_inventory",
       "etf_net_flow",
       "exchange_netflow",
       "front_month_continuous_not_spot: roll dates introduce small artificial gaps; USO is NOT used for WTI history because its roll decay and expense ratio make long-horizon USO returns diverge sharply from WTI",
-      "funding_rate",
-      "futures_basis",
       "gold_etf_flow",
       "gold_futures_used_as_xauusd_proxy: no key-free XAU/USD spot feed is available in P0; futures track spot closely but are not identical",
       "liquidation_volume",
-      "open_interest",
       "product_inventory",
-      "real_yield",
       "second_month_price",
       "stablecoin_supply_change"
     ],
@@ -236,14 +228,15 @@
     "warnings": [
       "extreme_daily_moves_flagged_for_review:1",
       "extreme_daily_moves_flagged_for_review:3",
+      "finance_data_reader_krx_extreme_move_verified",
       "multiple_sources_in_one_series",
       "non_positive_close:1",
       "volume_scale_shift_ratio:70.9"
     ]
   },
   "disclaimer": "Market and strategy-state data only. No order placement, account access, position sizing, or execution instruction is provided.",
-  "generated_at": "2026-08-01T22:47:30.942537+08:00",
+  "generated_at": "2026-08-02T10:10:05.270787+08:00",
   "schema_version": "1.0",
   "source_api": "market-data.expensesnap.online",
-  "source_as_of": "2026-07-31"
+  "source_as_of": "2026-08-01"
 }

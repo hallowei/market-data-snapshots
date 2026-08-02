@@ -31,16 +31,22 @@
       "value": null
     },
     "crude_inventory": {
-      "reason": "requires_official_statistics_feed_not_available_in_p0",
-      "status": "unavailable",
-      "value": null
+      "as_of": "2026-07-24",
+      "frequency": "weekly",
+      "is_proxy": false,
+      "provider": "eia_v2",
+      "retrieved_at": "2026-08-02T02:08:27.128663+00:00",
+      "source_series_id": "PET.WCESTUS1.W",
+      "status": "ok",
+      "units": "MBBL",
+      "value": 404508.0
     },
     "dxy": {
       "as_of": "2026-07-31",
       "change_20d": -0.010509593021804542,
       "change_60d": 0.013403733243590343,
       "is_proxy": true,
-      "sample_count": 550,
+      "sample_count": 549,
       "status": "ok",
       "value": 99.80000305175781
     },
@@ -49,7 +55,7 @@
       "change_20d": 0.23263932391282527,
       "change_60d": -0.17209346877703569,
       "is_proxy": true,
-      "sample_count": 550,
+      "sample_count": 549,
       "status": "ok",
       "value": 84.66999816894531
     },
@@ -106,7 +112,7 @@
     },
     "status": "unavailable"
   },
-  "calculation_version": "1.1.0",
+  "calculation_version": "1.1.2",
   "cross_asset": {
     "credit_hyg_lqd_ratio": {
       "reason": "credit_proxy_not_mapped",
@@ -118,7 +124,7 @@
       "change_20d": -0.010509593021804542,
       "change_60d": 0.013403733243590343,
       "is_proxy": true,
-      "sample_count": 550,
+      "sample_count": 549,
       "status": "ok",
       "value": 99.80000305175781
     },
@@ -133,14 +139,14 @@
       "change_20d": -0.009907111528877577,
       "change_60d": -0.08050601884227992,
       "is_proxy": true,
-      "sample_count": 549,
+      "sample_count": 548,
       "status": "ok",
       "value": 15.989999771118164
     }
   },
   "currency": "USD",
   "data_quality": {
-    "fetched_at": "2026-08-01T14:47:24.842999+00:00",
+    "fetched_at": "2026-08-02T02:08:57.865049+00:00",
     "is_proxy": true,
     "missed_sessions": 0,
     "missing_fields": [
@@ -148,7 +154,6 @@
       "second_month_price",
       "calendar_spread",
       "contango_backwardation",
-      "crude_inventory",
       "product_inventory",
       "crack_spread"
     ],
@@ -215,7 +220,7 @@
     "max_drawdown_3y": -0.53214314,
     "rolling_high": 145.28999329
   },
-  "generated_at": "2026-08-01T22:47:30.942537+08:00",
+  "generated_at": "2026-08-02T10:10:05.270787+08:00",
   "historical_analogs": {
     "distance_score": 2.2191,
     "excluded_recent_sessions": 20,
@@ -679,6 +684,8 @@
     }
   },
   "last_session": "2026-07-31",
+  "market_closed": true,
+  "market_status": "closed",
   "momentum": {
     "return_120d": 0.33233673,
     "return_1d": 0.01292023,
@@ -688,6 +695,7 @@
     "return_60d": -0.17209347
   },
   "name": "原油(WTI)",
+  "next_expected_session": "2026-08-03",
   "panic": {
     "missing_confirmation": [
       "credit_spread_proxy_unavailable",
@@ -712,7 +720,7 @@
     "return_60d": -0.17209347
   },
   "schema_version": "1.0",
-  "snapshot_id": "gsc-20260801T144738131006Z-v1.1.0",
+  "snapshot_id": "gsc-20260802T021012666930Z-v1.1.2",
   "source_api": "market-data.expensesnap.online",
   "source_as_of": "2026-07-31",
   "timezone": "America/New_York",
