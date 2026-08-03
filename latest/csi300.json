@@ -21,13 +21,13 @@
       "value": null
     },
     "csi1000_vs_csi300": {
-      "as_of": "2026-07-31",
-      "change_20d": -0.13954688805035698,
-      "change_60d": -0.13443483556026858,
+      "as_of": "2026-08-03",
+      "change_20d": -0.11589474226336505,
+      "change_60d": -0.1322002426259934,
       "is_proxy": true,
-      "sample_count": 530,
+      "sample_count": 531,
       "status": "ok",
-      "value": 0.6155169046104303
+      "value": 0.6226987082226575
     },
     "declining_count": {
       "reason": "requires_official_statistics_feed_not_available_in_p0",
@@ -38,6 +38,56 @@
       "reason": "requires_specialist_data_feed_not_available_in_p0",
       "status": "unavailable",
       "value": null
+    },
+    "etf_share_change": {
+      "as_of": "2026-07-31",
+      "is_proxy": false,
+      "methodology": "Reported ETF units outstanding; no NAV multiplication or flow estimate",
+      "missing_symbols": [],
+      "provider": "tushare_pro",
+      "scope_symbols": [
+        "510300.SH",
+        "159919.SZ"
+      ],
+      "source_api": "fund_share",
+      "status": "ok",
+      "units": "10k_fund_units",
+      "value": {
+        "159919.SZ": {
+          "as_of": "2026-07-31",
+          "change_10k_units": 11970.0,
+          "change_ratio": 0.018632041792551998,
+          "fund_share_10k_units": 654411.6676,
+          "previous_as_of": "2026-07-30"
+        },
+        "510300.SH": {
+          "as_of": "2026-07-30",
+          "change_10k_units": 53640.0,
+          "change_ratio": 0.020672521602158808,
+          "fund_share_10k_units": 2648388.77,
+          "previous_as_of": "2026-07-29"
+        }
+      },
+      "warnings": [
+        "fund_share_change_is_not_cash_flow_or_subscription_redemption_value"
+      ]
+    },
+    "if_basis": {
+      "as_of": "2026-07-31",
+      "contract": "IF2609.CFX",
+      "futures_price": 4548.2,
+      "index_close": 4588.1968,
+      "is_proxy": false,
+      "open_interest": 156268.0,
+      "point_basis": -39.996799999999894,
+      "price_method": "settlement_price_else_close",
+      "provider": "tushare_pro",
+      "selection_method": "highest_open_interest_IF_contract_on_latest_common_session",
+      "source_api": "fut_daily+index_daily",
+      "status": "ok",
+      "units": "ratio",
+      "value": -0.008717324418167917,
+      "warnings": []
     },
     "limit_down_count": {
       "reason": "requires_official_statistics_feed_not_available_in_p0",
@@ -50,9 +100,24 @@
       "value": null
     },
     "margin_balance_change": {
-      "reason": "requires_official_statistics_feed_not_available_in_p0",
-      "status": "unavailable",
-      "value": null
+      "as_of": "2026-07-31",
+      "exchange_ids": [
+        "SSE",
+        "SZSE"
+      ],
+      "financing_balance": 2580969087282.0,
+      "financing_balance_change": 4658041697.0,
+      "is_proxy": false,
+      "margin_and_securities_lending_balance": 2603178788050.0,
+      "previous_as_of": "2026-07-30",
+      "provider": "tushare_pro",
+      "scope": "SSE+SZSE aggregate rows returned by provider",
+      "securities_lending_balance": 22209700768.0,
+      "source_api": "margin",
+      "status": "ok",
+      "units": "ratio",
+      "value": 0.0018080276855476913,
+      "warnings": []
     },
     "note": "Computed entries are price-derived proxies (is_proxy=true). Reserved entries are unavailable in P0 and are not estimated from price.",
     "total_turnover": {
@@ -84,6 +149,16 @@
         "status": "unavailable",
         "value": null
       },
+      "etf_share_change": {
+        "reason": "requires_point_in_time_constituent_data",
+        "status": "unavailable",
+        "value": null
+      },
+      "if_basis": {
+        "reason": "requires_point_in_time_constituent_data",
+        "status": "unavailable",
+        "value": null
+      },
       "limit_down_count": {
         "reason": "requires_point_in_time_constituent_data",
         "status": "unavailable",
@@ -107,7 +182,7 @@
     },
     "status": "unavailable"
   },
-  "calculation_version": "1.1.2",
+  "calculation_version": "1.1.3",
   "cross_asset": {
     "credit_hyg_lqd_ratio": {
       "reason": "credit_proxy_not_mapped",
@@ -115,13 +190,13 @@
       "value": null
     },
     "dxy": {
-      "as_of": "2026-08-02",
-      "change_20d": -0.011264269748160416,
-      "change_60d": 0.01728219039130585,
+      "as_of": "2026-08-03",
+      "change_20d": -0.011472461062663863,
+      "change_60d": 0.017067988244100496,
       "is_proxy": true,
       "sample_count": 549,
       "status": "ok",
-      "value": 99.71399688720703
+      "value": 99.69300079345703
     },
     "is_proxy": true,
     "semis_relative_strength_smh_qqq": {
@@ -141,7 +216,7 @@
   },
   "currency": "CNY",
   "data_quality": {
-    "fetched_at": "2026-08-03T00:05:34.349342+00:00",
+    "fetched_at": "2026-08-03T05:11:20.988974+00:00",
     "is_proxy": false,
     "missed_sessions": 0,
     "missing_fields": [],
@@ -204,7 +279,7 @@
     "max_drawdown_3y": -0.45251698,
     "rolling_high": 5877.202
   },
-  "generated_at": "2026-08-03T08:05:44.392038+08:00",
+  "generated_at": "2026-08-03T13:11:47.706427+08:00",
   "historical_analogs": {
     "distance_score": 1.3664,
     "excluded_recent_sessions": 20,
@@ -668,8 +743,8 @@
     }
   },
   "last_session": "2026-07-31",
-  "market_closed": true,
-  "market_status": "closed",
+  "market_closed": false,
+  "market_status": "open",
   "momentum": {
     "return_120d": -0.03485011,
     "return_1d": 0.00845694,
@@ -703,7 +778,7 @@
     "return_60d": -0.06373072
   },
   "schema_version": "1.0",
-  "snapshot_id": "gsc-20260803T000551542683Z-v1.1.2",
+  "snapshot_id": "gsc-20260803T051154931827Z-v1.1.3",
   "source_api": "market-data.expensesnap.online",
   "source_as_of": "2026-07-31",
   "timezone": "Asia/Shanghai",

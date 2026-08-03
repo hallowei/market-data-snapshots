@@ -26,44 +26,81 @@
       "value": null
     },
     "crack_spread": {
-      "reason": "requires_specialist_data_feed_not_available_in_p0",
-      "status": "unavailable",
-      "value": null
+      "as_of": "2026-07-27",
+      "distillate_spot_crack": 83.666,
+      "gasoline_spot_crack": 51.91399999999999,
+      "inputs": {
+        "distillate": 3.998,
+        "gasoline": 3.242,
+        "wti": 84.25
+      },
+      "is_proxy": true,
+      "methodology": "Derived spot-price proxy: product USD/gallon converted at 42 gallons/barrel; 3:2:1 = (2*gasoline + 1*No.2 heating oil)/3 - WTI. Not a futures crack, refinery margin, or tradable term-structure quote.",
+      "provider": "eia_v2",
+      "retrieved_at": "2026-08-03T05:10:50.182356+00:00",
+      "source_series_ids": {
+        "distillate": "PET.EER_EPD2F_PF4_Y35NY_DPG.D",
+        "gasoline": "PET.EER_EPMRU_PF4_Y35NY_DPG.D",
+        "wti": "PET.RWTC.D"
+      },
+      "status": "ok",
+      "three_two_one_spot_crack": 62.49799999999999,
+      "units": "usd_per_barrel",
+      "value": 62.49799999999999
     },
     "crude_inventory": {
       "as_of": "2026-07-24",
       "frequency": "weekly",
       "is_proxy": false,
       "provider": "eia_v2",
-      "retrieved_at": "2026-08-02T23:31:15.421502+00:00",
+      "retrieved_at": "2026-08-03T05:10:46.400089+00:00",
       "source_series_id": "PET.WCESTUS1.W",
       "status": "ok",
       "units": "MBBL",
       "value": 404508.0
     },
     "dxy": {
-      "as_of": "2026-08-02",
-      "change_20d": -0.011264269748160416,
-      "change_60d": 0.01728219039130585,
+      "as_of": "2026-08-03",
+      "change_20d": -0.011472461062663863,
+      "change_60d": 0.017067988244100496,
       "is_proxy": true,
       "sample_count": 549,
       "status": "ok",
-      "value": 99.71399688720703
+      "value": 99.69300079345703
     },
     "front_month_price": {
-      "as_of": "2026-08-02",
-      "change_20d": 0.17753461162877726,
-      "change_60d": -0.1510307144910188,
+      "as_of": "2026-08-03",
+      "change_20d": 0.158862128444051,
+      "change_60d": -0.16449304888991023,
       "is_proxy": true,
       "sample_count": 549,
       "status": "ok",
-      "value": 80.72000122070312
+      "value": 79.44000244140625
     },
     "note": "Computed entries are price-derived proxies (is_proxy=true). Reserved entries are unavailable in P0 and are not estimated from price.",
     "product_inventory": {
-      "reason": "requires_official_statistics_feed_not_available_in_p0",
-      "status": "unavailable",
-      "value": null
+      "as_of": "2026-07-24",
+      "frequency": "weekly",
+      "is_proxy": false,
+      "methodology": "EIA reported U.S. ending stocks; no price-derived estimate",
+      "provider": "eia_v2",
+      "retrieved_at": "2026-08-03T05:10:48.448744+00:00",
+      "status": "ok",
+      "units": "thousand_barrels",
+      "value": {
+        "distillate_fuel_oil": {
+          "as_of": "2026-07-24",
+          "source_series_id": "PET.WDISTUS1.W",
+          "value": 110632.0,
+          "weekly_change": 1062.0
+        },
+        "motor_gasoline": {
+          "as_of": "2026-07-24",
+          "source_series_id": "PET.WGTSTUS1.W",
+          "value": 211301.0,
+          "weekly_change": 7.0
+        }
+      }
     },
     "second_month_price": {
       "reason": "requires_specialist_data_feed_not_available_in_p0",
@@ -112,7 +149,7 @@
     },
     "status": "unavailable"
   },
-  "calculation_version": "1.1.2",
+  "calculation_version": "1.1.3",
   "cross_asset": {
     "credit_hyg_lqd_ratio": {
       "reason": "credit_proxy_not_mapped",
@@ -120,13 +157,13 @@
       "value": null
     },
     "dxy": {
-      "as_of": "2026-08-02",
-      "change_20d": -0.011264269748160416,
-      "change_60d": 0.01728219039130585,
+      "as_of": "2026-08-03",
+      "change_20d": -0.011472461062663863,
+      "change_60d": 0.017067988244100496,
       "is_proxy": true,
       "sample_count": 549,
       "status": "ok",
-      "value": 99.71399688720703
+      "value": 99.69300079345703
     },
     "is_proxy": true,
     "semis_relative_strength_smh_qqq": {
@@ -146,16 +183,14 @@
   },
   "currency": "USD",
   "data_quality": {
-    "fetched_at": "2026-08-03T00:05:36.949345+00:00",
+    "fetched_at": "2026-08-03T05:11:23.560788+00:00",
     "is_proxy": true,
     "missed_sessions": 0,
     "missing_fields": [
       "front_month_continuous_not_spot: roll dates introduce small artificial gaps; USO is NOT used for WTI history because its roll decay and expense ratio make long-horizon USO returns diverge sharply from WTI",
       "second_month_price",
       "calendar_spread",
-      "contango_backwardation",
-      "product_inventory",
-      "crack_spread"
+      "contango_backwardation"
     ],
     "source": "yahoo_public",
     "source_symbol": "CL=F",
@@ -220,7 +255,7 @@
     "max_drawdown_3y": -0.53214314,
     "rolling_high": 145.28999329
   },
-  "generated_at": "2026-08-03T08:05:44.392038+08:00",
+  "generated_at": "2026-08-03T13:11:47.706427+08:00",
   "historical_analogs": {
     "distance_score": 2.2191,
     "excluded_recent_sessions": 20,
@@ -720,7 +755,7 @@
     "return_60d": -0.17209347
   },
   "schema_version": "1.0",
-  "snapshot_id": "gsc-20260803T000551542683Z-v1.1.2",
+  "snapshot_id": "gsc-20260803T051154931827Z-v1.1.3",
   "source_api": "market-data.expensesnap.online",
   "source_as_of": "2026-07-31",
   "timezone": "America/New_York",
