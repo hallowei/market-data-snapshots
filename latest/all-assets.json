@@ -2,12 +2,12 @@
   "asset_count": 8,
   "assets": [
     {
-      "as_of": "2026-08-10T16:00:00-04:00",
+      "as_of": "2026-08-11T16:00:00-04:00",
       "asset_id": "nasdaq100",
       "benchmark": "NDX",
-      "close": 29621.8046875,
+      "close": 29525.47851562,
       "data_quality": {
-        "fetched_at": "2026-08-11T00:48:02.784775+00:00",
+        "fetched_at": "2026-08-12T00:48:03.076481+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -17,19 +17,19 @@
         "status": "complete",
         "warnings": []
       },
-      "drawdown": -0.03388045,
+      "drawdown": -0.03702214,
       "name": "纳斯达克100",
-      "return_1d": -0.00338117,
-      "return_20d": 0.01222334,
-      "source_as_of": "2026-08-10"
+      "return_1d": -0.00325174,
+      "return_20d": -0.00205536,
+      "source_as_of": "2026-08-11"
     },
     {
-      "as_of": "2026-08-10T16:00:00-04:00",
+      "as_of": "2026-08-11T16:00:00-04:00",
       "asset_id": "sp500",
       "benchmark": "SPX",
-      "close": 7753.10986328,
+      "close": 7728.20019531,
       "data_quality": {
-        "fetched_at": "2026-08-11T00:48:11.249445+00:00",
+        "fetched_at": "2026-08-12T00:48:11.377370+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -39,19 +39,19 @@
         "status": "complete",
         "warnings": []
       },
-      "drawdown": -0.00058398,
+      "drawdown": -0.00379496,
       "name": "标普500",
-      "return_1d": -0.00058398,
-      "return_20d": 0.03163796,
-      "source_as_of": "2026-08-10"
+      "return_1d": -0.00321286,
+      "return_20d": 0.02447248,
+      "source_as_of": "2026-08-11"
     },
     {
-      "as_of": "2026-08-10T00:00:00+00:00",
+      "as_of": "2026-08-11T00:00:00+00:00",
       "asset_id": "btc",
       "benchmark": "BTC/USDT spot composite",
-      "close": 63970.01,
+      "close": 63600.0,
       "data_quality": {
-        "fetched_at": "2026-08-11T00:48:17.467872+00:00",
+        "fetched_at": "2026-08-12T00:48:23.724902+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [
@@ -69,76 +69,69 @@
           "multiple_sources_in_one_series"
         ]
       },
-      "drawdown": -0.48683813,
+      "drawdown": -0.48980631,
       "name": "比特币",
-      "return_1d": -0.01435373,
-      "return_20d": -0.03885666,
-      "source_as_of": "2026-08-10"
+      "return_1d": -0.00578412,
+      "return_20d": -0.03803236,
+      "source_as_of": "2026-08-11"
     },
     {
       "as_of": "2026-08-10T15:00:00+09:00",
       "asset_id": "nikkei225",
       "benchmark": "Nikkei 225",
-      "close": 66970.22,
+      "close": 66970.21875,
       "data_quality": {
-        "fetched_at": "2026-08-11T00:48:21.091702+00:00",
+        "fetched_at": "2026-08-12T00:48:27.065757+00:00",
         "is_proxy": false,
-        "missed_sessions": 0,
+        "missed_sessions": 1,
         "missing_fields": [
           "foreign_net_flow",
           "sox_confirmation"
         ],
-        "source": "yahoo_public+akshare_sina",
-        "source_symbol": "^N225+NKY",
+        "source": "yahoo_public",
+        "source_symbol": "^N225",
         "stale": false,
         "status": "partial",
         "warnings": [
-          "akshare_sina_gap_filled:1",
-          "multiple_sources_in_one_series"
+          "akshare_sina_fallback_no_missing_rows",
+          "latest_completed_session_not_observed:1"
         ]
       },
-      "drawdown": -0.07456676,
+      "drawdown": -0.07456678,
       "name": "日经225",
-      "return_1d": 0.02078307,
-      "return_20d": -0.02315576,
+      "return_1d": 0.02078305,
+      "return_20d": -0.02315578,
       "source_as_of": "2026-08-10"
     },
     {
-      "as_of": "2026-08-10T16:00:00+09:00",
+      "as_of": "2026-08-11T16:00:00+09:00",
       "asset_id": "kospi",
       "benchmark": "KOSPI",
-      "close": 6299.66,
+      "close": 6345.52978516,
       "data_quality": {
-        "fetched_at": "2026-08-11T00:48:26.095328+00:00",
+        "fetched_at": "2026-08-12T00:48:31.994630+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
-        "missing_fields": [
-          "foreign_net_flow",
-          "sox_confirmation"
-        ],
-        "source": "yahoo_public+finance_data_reader_krx",
-        "source_symbol": "^KS11+KS11",
+        "missing_fields": [],
+        "source": "yahoo_public",
+        "source_symbol": "^KS11",
         "stale": false,
-        "status": "partial",
-        "warnings": [
-          "finance_data_reader_krx_gap_filled:1",
-          "volume_scale_shift_ratio:763",
-          "multiple_sources_in_one_series"
-        ]
+        "status": "complete",
+        "warnings": []
       },
-      "drawdown": -0.30883476,
+      "drawdown": -0.30380217,
       "name": "韩国股市",
-      "return_1d": 0.00653323,
-      "return_20d": -0.15734208,
-      "source_as_of": "2026-08-10"
+      "return_1d": 0.00728129,
+      "return_20d": -0.06778392,
+      "source_as_of": "2026-08-11"
     },
     {
-      "as_of": "2026-08-10T15:00:00+08:00",
+      "as_of": "2026-08-11T15:00:00+08:00",
       "asset_id": "csi300",
       "benchmark": "沪深300",
-      "close": 4702.0247,
+      "close": 4663.7887,
       "data_quality": {
-        "fetched_at": "2026-08-11T00:48:30.452006+00:00",
+        "fetched_at": "2026-08-12T00:48:36.818473+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -148,19 +141,19 @@
         "status": "complete",
         "warnings": []
       },
-      "drawdown": -0.19995523,
+      "drawdown": -0.20646105,
       "name": "中国A股(沪深300)",
-      "return_1d": 0.00161642,
-      "return_20d": 0.00141452,
-      "source_as_of": "2026-08-10"
+      "return_1d": -0.00813182,
+      "return_20d": -0.02766877,
+      "source_as_of": "2026-08-11"
     },
     {
-      "as_of": "2026-08-10T16:00:00-04:00",
+      "as_of": "2026-08-11T16:00:00-04:00",
       "asset_id": "wti",
       "benchmark": "WTI front-month continuous",
-      "close": 82.20999908,
+      "close": 83.75,
       "data_quality": {
-        "fetched_at": "2026-08-11T00:48:33.195345+00:00",
+        "fetched_at": "2026-08-12T00:48:39.524894+00:00",
         "is_proxy": true,
         "missed_sessions": 0,
         "missing_fields": [
@@ -175,23 +168,23 @@
         "status": "partial",
         "warnings": [
           "non_positive_close:1",
-          "volume_scale_shift_ratio:0.0108",
+          "volume_scale_shift_ratio:0.0138",
           "extreme_daily_moves_flagged_for_review:3"
         ]
       },
-      "drawdown": -0.43416613,
+      "drawdown": -0.42356663,
       "name": "原油(WTI)",
-      "return_1d": 0.05154769,
-      "return_20d": 0.052086,
-      "source_as_of": "2026-08-10"
+      "return_1d": 0.01972486,
+      "return_20d": 0.05558361,
+      "source_as_of": "2026-08-11"
     },
     {
-      "as_of": "2026-08-10T16:00:00-04:00",
+      "as_of": "2026-08-11T16:00:00-04:00",
       "asset_id": "gold",
       "benchmark": "Gold front-month futures (XAU/USD proxy)",
-      "close": 4470.0,
+      "close": 4441.20019531,
       "data_quality": {
-        "fetched_at": "2026-08-11T00:48:36.051279+00:00",
+        "fetched_at": "2026-08-12T00:48:42.413201+00:00",
         "is_proxy": true,
         "missed_sessions": 0,
         "missing_fields": [
@@ -203,17 +196,17 @@
         "status": "partial",
         "warnings": []
       },
-      "drawdown": -0.15952165,
+      "drawdown": -0.16493677,
       "name": "黄金",
-      "return_1d": 0.02978778,
-      "return_20d": 0.11833875,
-      "source_as_of": "2026-08-10"
+      "return_1d": 0.01820358,
+      "return_20d": 0.09359535,
+      "source_as_of": "2026-08-11"
     }
   ],
   "calculation_version": "1.1.5",
   "data_quality": {
     "is_proxy": true,
-    "missed_sessions": 0,
+    "missed_sessions": 1,
     "missing_fields": [
       "calendar_spread",
       "contango_backwardation",
@@ -230,19 +223,17 @@
     "stale": false,
     "status": "partial",
     "warnings": [
-      "akshare_sina_gap_filled:1",
+      "akshare_sina_fallback_no_missing_rows",
       "extreme_daily_moves_flagged_for_review:1",
       "extreme_daily_moves_flagged_for_review:3",
-      "finance_data_reader_krx_gap_filled:1",
+      "latest_completed_session_not_observed:1",
       "multiple_sources_in_one_series",
       "non_positive_close:1",
-      "volume_scale_shift_ratio:0.0108",
-      "volume_scale_shift_ratio:763"
+      "volume_scale_shift_ratio:0.0138"
     ]
   },
   "disclaimer": "Market and strategy-state data only. No order placement, account access, position sizing, or execution instruction is provided.",
-  "generated_at": "2026-08-11T08:48:40.909295+08:00",
+  "generated_at": "2026-08-12T08:48:46.963641+08:00",
   "schema_version": "1.0",
-  "source_api": "market-data.expensesnap.online",
-  "source_as_of": "2026-08-10"
+  "source_as_of": "2026-08-11"
 }
