@@ -1,24 +1,31 @@
 {
-  "as_of": "2026-08-11T16:00:00+09:00",
+  "as_of": "2026-08-12T16:00:00+09:00",
   "asset_id": "kospi",
   "calculation_version": "1.1.5",
   "data_quality": {
-    "fetched_at": "2026-08-12T00:48:31.994630+00:00",
+    "fetched_at": "2026-08-13T00:48:24.787652+00:00",
     "is_proxy": false,
     "missed_sessions": 0,
-    "missing_fields": [],
-    "source": "yahoo_public",
-    "source_symbol": "^KS11",
+    "missing_fields": [
+      "foreign_net_flow",
+      "sox_confirmation"
+    ],
+    "source": "yahoo_public+finance_data_reader_krx",
+    "source_symbol": "^KS11+KS11",
     "stale": false,
-    "status": "complete",
-    "warnings": []
+    "status": "partial",
+    "warnings": [
+      "finance_data_reader_krx_gap_filled:1",
+      "volume_scale_shift_ratio:1e+03",
+      "multiple_sources_in_one_series"
+    ]
   },
-  "distance_score": 5.6543,
+  "distance_score": 5.626,
   "excluded_recent_sessions": 20,
-  "generated_at": "2026-08-12T08:48:46.963641+08:00",
+  "generated_at": "2026-08-13T08:48:40.608832+08:00",
   "horizons": {
     "forward_120d": {
-      "median_additional_drawdown": -0.1788987135487733,
+      "median_additional_drawdown": -0.20196093954227512,
       "median_return": -0.036701109569915014,
       "positive_rate": 0.47368421052631576,
       "sample_count": 19,
@@ -26,17 +33,17 @@
       "worst_return": -0.3293426793134224
     },
     "forward_20d": {
-      "median_additional_drawdown": -0.05032853178642577,
-      "median_return": 0.03497304803568302,
-      "positive_rate": 0.65,
+      "median_additional_drawdown": -0.05369573639837594,
+      "median_return": 0.011370728199102786,
+      "positive_rate": 0.55,
       "sample_count": 20,
       "worst_additional_drawdown": -0.19704612573727787,
-      "worst_return": -0.1268456500976819
+      "worst_return": -0.13443082275907214
     },
     "forward_60d": {
-      "median_additional_drawdown": -0.12498337769426243,
-      "median_return": 0.022598138747568552,
-      "positive_rate": 0.6,
+      "median_additional_drawdown": -0.11774529849631366,
+      "median_return": 0.00801612276394792,
+      "positive_rate": 0.55,
       "sample_count": 20,
       "worst_additional_drawdown": -0.28332459281219735,
       "worst_return": -0.17455791876018933
@@ -49,89 +56,87 @@
   "schema_version": "1.0",
   "similar_dates": [
     {
-      "date": "2020-03-27",
-      "distance_score": 4.3469
+      "date": "2020-03-31",
+      "distance_score": 4.4078
     },
     {
-      "date": "2008-11-03",
-      "distance_score": 5.0217
+      "date": "2008-11-05",
+      "distance_score": 5.0463
     },
     {
       "date": "2000-05-02",
-      "distance_score": 5.2967
-    },
-    {
-      "date": "2011-10-06",
-      "distance_score": 5.3218
-    },
-    {
-      "date": "2011-08-29",
-      "distance_score": 5.4526
+      "distance_score": 5.3362
     },
     {
       "date": "2024-08-30",
-      "distance_score": 5.5112
+      "distance_score": 5.3844
     },
     {
-      "date": "2001-09-27",
-      "distance_score": 5.5386
+      "date": "2011-10-07",
+      "distance_score": 5.3939
+    },
+    {
+      "date": "2011-08-31",
+      "distance_score": 5.485
+    },
+    {
+      "date": "2004-06-07",
+      "distance_score": 5.4941
+    },
+    {
+      "date": "2001-10-04",
+      "distance_score": 5.5024
     },
     {
       "date": "2026-04-03",
-      "distance_score": 5.5672
+      "distance_score": 5.514
     },
     {
-      "date": "2004-06-03",
-      "distance_score": 5.5789
+      "date": "2008-02-14",
+      "distance_score": 5.6692
     },
     {
       "date": "2002-07-23",
-      "distance_score": 5.709
-    },
-    {
-      "date": "2008-02-11",
-      "distance_score": 5.746
-    },
-    {
-      "date": "2000-10-02",
-      "distance_score": 5.8528
+      "distance_score": 5.6762
     },
     {
       "date": "2000-03-02",
-      "distance_score": 5.8692
+      "distance_score": 5.8016
+    },
+    {
+      "date": "2023-11-07",
+      "distance_score": 5.8765
     },
     {
       "date": "1999-10-20",
-      "distance_score": 5.9071
-    },
-    {
-      "date": "2007-08-24",
-      "distance_score": 6.0044
-    },
-    {
-      "date": "2023-11-08",
-      "distance_score": 6.0169
-    },
-    {
-      "date": "2008-12-01",
-      "distance_score": 6.0571
+      "distance_score": 5.9025
     },
     {
       "date": "2000-06-15",
-      "distance_score": 6.0638
+      "distance_score": 5.9061
+    },
+    {
+      "date": "2000-10-05",
+      "distance_score": 5.9236
+    },
+    {
+      "date": "2007-08-24",
+      "distance_score": 5.978
     },
     {
       "date": "2025-04-22",
-      "distance_score": 6.1035
+      "distance_score": 6.0437
     },
     {
-      "date": "2002-10-15",
-      "distance_score": 6.1217
+      "date": "2000-11-02",
+      "distance_score": 6.0811
+    },
+    {
+      "date": "2002-11-01",
+      "distance_score": 6.0971
     }
   ],
-  "snapshot_id": "gsc-20260812T004854718991Z-v1.1.5",
-  "source_api": "market-data.expensesnap.online",
-  "source_as_of": "2026-08-11",
+  "source_as_of": "2026-08-12",
   "state_fields": [
     "price_vs_ma20_pct",
     "price_vs_ma60_pct",
