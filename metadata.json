@@ -4,7 +4,7 @@
     "btc": {
       "calculation_version": "1.1.5",
       "data_quality": {
-        "fetched_at": "2026-08-13T00:48:16.862500+00:00",
+        "fetched_at": "2026-08-14T00:48:17.689952+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [
@@ -22,12 +22,12 @@
           "multiple_sources_in_one_series"
         ]
       },
-      "source_as_of": "2026-08-12"
+      "source_as_of": "2026-08-13"
     },
     "csi300": {
       "calculation_version": "1.1.5",
       "data_quality": {
-        "fetched_at": "2026-08-13T00:48:29.836315+00:00",
+        "fetched_at": "2026-08-14T00:48:35.269585+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -37,12 +37,12 @@
         "status": "complete",
         "warnings": []
       },
-      "source_as_of": "2026-08-12"
+      "source_as_of": "2026-08-13"
     },
     "gold": {
       "calculation_version": "1.1.5",
       "data_quality": {
-        "fetched_at": "2026-08-13T00:48:35.845183+00:00",
+        "fetched_at": "2026-08-14T00:48:41.763329+00:00",
         "is_proxy": true,
         "missed_sessions": 0,
         "missing_fields": [
@@ -54,12 +54,12 @@
         "status": "partial",
         "warnings": []
       },
-      "source_as_of": "2026-08-12"
+      "source_as_of": "2026-08-13"
     },
     "kospi": {
       "calculation_version": "1.1.5",
       "data_quality": {
-        "fetched_at": "2026-08-13T00:48:24.787652+00:00",
+        "fetched_at": "2026-08-14T00:48:25.168645+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [
@@ -72,16 +72,16 @@
         "status": "partial",
         "warnings": [
           "finance_data_reader_krx_gap_filled:1",
-          "volume_scale_shift_ratio:1e+03",
+          "volume_scale_shift_ratio:1.19e+03",
           "multiple_sources_in_one_series"
         ]
       },
-      "source_as_of": "2026-08-12"
+      "source_as_of": "2026-08-13"
     },
     "nasdaq100": {
       "calculation_version": "1.1.5",
       "data_quality": {
-        "fetched_at": "2026-08-13T00:48:02.736859+00:00",
+        "fetched_at": "2026-08-14T00:48:02.645820+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -91,12 +91,12 @@
         "status": "complete",
         "warnings": []
       },
-      "source_as_of": "2026-08-12"
+      "source_as_of": "2026-08-13"
     },
     "nikkei225": {
       "calculation_version": "1.1.5",
       "data_quality": {
-        "fetched_at": "2026-08-13T00:48:20.415367+00:00",
+        "fetched_at": "2026-08-14T00:48:21.043998+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [
@@ -112,12 +112,12 @@
           "multiple_sources_in_one_series"
         ]
       },
-      "source_as_of": "2026-08-12"
+      "source_as_of": "2026-08-13"
     },
     "sp500": {
       "calculation_version": "1.1.5",
       "data_quality": {
-        "fetched_at": "2026-08-13T00:48:10.620405+00:00",
+        "fetched_at": "2026-08-14T00:48:10.428113+00:00",
         "is_proxy": false,
         "missed_sessions": 0,
         "missing_fields": [],
@@ -127,12 +127,12 @@
         "status": "complete",
         "warnings": []
       },
-      "source_as_of": "2026-08-12"
+      "source_as_of": "2026-08-13"
     },
     "wti": {
       "calculation_version": "1.1.5",
       "data_quality": {
-        "fetched_at": "2026-08-13T00:48:32.877011+00:00",
+        "fetched_at": "2026-08-14T00:48:38.568760+00:00",
         "is_proxy": true,
         "missed_sessions": 0,
         "missing_fields": [
@@ -147,86 +147,117 @@
         "status": "partial",
         "warnings": [
           "non_positive_close:1",
-          "volume_scale_shift_ratio:0.0114",
+          "volume_scale_shift_ratio:0.00981",
           "extreme_daily_moves_flagged_for_review:3"
         ]
       },
-      "source_as_of": "2026-08-12"
+      "source_as_of": "2026-08-13"
     }
   },
   "calculation_version": "1.1.5",
+  "data_quality": {
+    "is_proxy": true,
+    "missed_sessions": 0,
+    "missing_fields": [
+      "calendar_spread",
+      "contango_backwardation",
+      "etf_net_flow",
+      "exchange_netflow",
+      "foreign_net_flow",
+      "front_month_continuous_not_spot: roll dates introduce small artificial gaps; USO is NOT used for WTI history because its roll decay and expense ratio make long-horizon USO returns diverge sharply from WTI",
+      "gold_futures_used_as_xauusd_proxy: no key-free XAU/USD spot feed is available in P0; futures track spot closely but are not identical",
+      "liquidation_volume",
+      "second_month_price",
+      "sox_confirmation",
+      "stablecoin_supply_change"
+    ],
+    "stale": false,
+    "status": "partial",
+    "warnings": [
+      "akshare_sina_gap_filled:1",
+      "extreme_daily_moves_flagged_for_review:1",
+      "extreme_daily_moves_flagged_for_review:3",
+      "finance_data_reader_krx_gap_filled:1",
+      "multiple_sources_in_one_series",
+      "non_positive_close:1",
+      "volume_scale_shift_ratio:0.00981",
+      "volume_scale_shift_ratio:1.19e+03"
+    ]
+  },
+  "disclaimer": "Market and strategy-state data only. No order placement, account access, position sizing, or execution instruction is provided.",
   "files": {
     "analogs/btc.json": {
-      "bytes": 3612,
-      "sha256": "b5146d3a1e13a89bf8efd8b522f745201c907acf6b7eb35700847295fc1810c8"
+      "bytes": 3508,
+      "sha256": "2a603cab0e2fa28ab6918107449d0cbf3cd822f4d368bc06cf16453fd091ebb1"
     },
     "analogs/csi300.json": {
-      "bytes": 3418,
-      "sha256": "cd2117a9763807c479cdb2b55412de964b5ac60b339c3dfa3140fdaff5caaa8d"
+      "bytes": 3317,
+      "sha256": "4354f3176744c777d677976b2979a1fc26746958a229c072b347bd02c6be9b26"
     },
     "analogs/gold.json": {
-      "bytes": 3526,
-      "sha256": "c97ca6a11f9f5070718db270474ea8d341603b2a3bf1018799559040e7aa73de"
+      "bytes": 3420,
+      "sha256": "b991a0db5ddc60eebac3ae43e1d087b7564dfba544f994297b82563ac3ecbb41"
     },
     "analogs/kospi.json": {
-      "bytes": 3611,
-      "sha256": "cb0c369458b0690883a748f3eca2d53970e20488b9fdef9103170a3fd36d7733"
+      "bytes": 3506,
+      "sha256": "bb5287a3fabbdd3b4a0d182defe04187414039dfac3da0ffbfdbccd38e154f8f"
     },
     "analogs/nasdaq100.json": {
-      "bytes": 3397,
-      "sha256": "6f8969feb7017e1453226144baba8ccc2a96903d035384c3e84191621347c96f"
+      "bytes": 3277,
+      "sha256": "4b9a9b97d5d142be63d5c720a4577edef195e7c1f28c73bd40cc08d18d13a63b"
     },
     "analogs/nikkei225.json": {
-      "bytes": 3558,
-      "sha256": "56176cedd2de0bc82b5d9b9b186a54b4f890022b5ac849b03a209c042c9884e8"
+      "bytes": 3449,
+      "sha256": "c87aeb8143a39c043776484d9edf962903b406f422f3b525462e58d4edd88945"
     },
     "analogs/sp500.json": {
-      "bytes": 3392,
-      "sha256": "8cb74d822a161b66f0d83733f5dbcec78e8f86a3057be403938213858cb1d67b"
+      "bytes": 3290,
+      "sha256": "efede0acc72c5720b08ff66fe0c42718bf6148f461e3fba03eb1c526f3ac9dc3"
     },
     "analogs/wti.json": {
-      "bytes": 3803,
-      "sha256": "5d986bc6c34a5a4d98d4b3e22ead0477d67c5a66a83e081a1e1ea06e2576902b"
+      "bytes": 3697,
+      "sha256": "b85e8157d04a538fa81aca183d40bc67cf6c07f3f60a827901d172c9827b9d18"
     },
     "latest/all-assets.json": {
-      "bytes": 7812,
-      "sha256": "6ac75a4857e2005d8efb9233ad59619028ce8f1c159cca6c4b973591753b8af6"
+      "bytes": 7770,
+      "sha256": "e86d529a5b0e6f13639b8321957cdd7644c30b63dcf999e4724c066d9578ccaf"
     },
     "latest/btc.json": {
-      "bytes": 20566,
-      "sha256": "db2cfccae1a880eb999f07158da430f81966c012f2b0357a78109b2881f1c574"
+      "bytes": 20391,
+      "sha256": "d51706a39dc9f35e6b29e929d9fc1a850c7012bc66127cd7bea032a1eaeadc94"
     },
     "latest/csi300.json": {
-      "bytes": 22794,
-      "sha256": "5d29348314780cc7487710c78dd5a1ba6adb9196724caa33271ee27a9648b90e"
+      "bytes": 22640,
+      "sha256": "4dce07ea5b3bb1eca455b6dca354537f1e3f2931de1bd2a677d027bc4d8858f8"
     },
     "latest/gold.json": {
-      "bytes": 19629,
-      "sha256": "630b188e46891518f2f3c7fd1242f1e1cdb3031a0ea6bb3c4359899bc66c06e9"
+      "bytes": 19521,
+      "sha256": "00ad0628b6b1d4e88af9b2a519347b218e54a741e8985f721b76e3dba146f56f"
     },
     "latest/kospi.json": {
-      "bytes": 19187,
-      "sha256": "a8776330172c1486f84ebb9315da91b3211c4a167d548e70c3db6261a3a3dcdc"
+      "bytes": 18996,
+      "sha256": "677f57a25329152eb01662bc8c38f683d7ed40c71c42fad871e0f5ced89bde9d"
     },
     "latest/nasdaq100.json": {
-      "bytes": 19424,
-      "sha256": "9a02f477d013497b134d830121b5ca3f2b78068878f12af477ad6353a835a5c9"
+      "bytes": 19301,
+      "sha256": "e6208c3164f90845b3fc589cd220a99e806d17f5362098b16c3bf8429e420fec"
     },
     "latest/nikkei225.json": {
-      "bytes": 19002,
-      "sha256": "2804d98b748eceef24fa74cb89f4eb6b8289a6dc02c9e7d14f92c78beccfcb92"
+      "bytes": 18962,
+      "sha256": "57b3cad3f5d5f9c927e052d34ab32f48856bf766f14fa09bfaa4fa05303bbc73"
     },
     "latest/sp500.json": {
-      "bytes": 19341,
-      "sha256": "23135576b8da5d048b083700ac45e22685800cb6abf5bb52edb40670aad01512"
+      "bytes": 19250,
+      "sha256": "773021176bd1512d5b0ec0c855ad1f86a82ca2951ee794d69b640b21b22d38d5"
     },
     "latest/wti.json": {
-      "bytes": 22062,
-      "sha256": "9696881f8a407e48b2c5fafef0bf3639a0cdde22f65b6511299eb09f3c231c49"
+      "bytes": 22064,
+      "sha256": "fdae6890e76c757b67e5369e21d961ccdf8a5c2c5d4478c79092aa40795656c0"
     }
   },
-  "generated_at": "2026-08-13T10:45:25.896262+08:00",
+  "generated_at": "2026-08-14T08:48:46.792314+08:00",
   "schema_version": "1.0",
-  "source_api": "market-data.expensesnap.online",
-  "source_as_of": "2026-08-12"
+  "source_api": "https://market-data.expensesnap.online",
+  "source_as_of": "2026-08-13",
+  "source_snapshot_id": "gsc-20260814T004854788723Z-v1.1.5"
 }
