@@ -1,17 +1,13 @@
 {
-  "as_of": "2026-08-16T00:00:00+00:00",
+  "as_of": "2026-08-17T00:00:00+00:00",
   "asset_id": "btc",
-  "calculation_version": "1.1.5",
+  "calculation_version": "1.1.7",
   "data_quality": {
-    "fetched_at": "2026-08-17T00:48:18.830380+00:00",
+    "fetched_at": "2026-08-18T00:48:19.702012+00:00",
     "is_proxy": false,
     "missed_sessions": 0,
-    "missing_fields": [
-      "etf_net_flow",
-      "liquidation_volume",
-      "stablecoin_supply_change",
-      "exchange_netflow"
-    ],
+    "missing_fields": [],
+    "scope": "core_market_series",
     "source": "binance_spot",
     "source_symbol": "BTCUSDT",
     "stale": false,
@@ -21,28 +17,49 @@
       "multiple_sources_in_one_series"
     ]
   },
-  "distance_score": 1.2011,
+  "distance_score": 1.1661,
+  "enrichment_quality": {
+    "available_fields": [
+      "funding_rate",
+      "futures_basis",
+      "open_interest"
+    ],
+    "missing_fields": [
+      "etf_net_flow",
+      "liquidation_volume",
+      "stablecoin_supply_change",
+      "exchange_netflow"
+    ],
+    "reasons": {
+      "etf_net_flow": "requires_specialist_data_feed_not_available_in_p0",
+      "exchange_netflow": "requires_exchange_or_onchain_api_not_available_in_p0",
+      "liquidation_volume": "requires_exchange_or_onchain_api_not_available_in_p0",
+      "stablecoin_supply_change": "requires_exchange_or_onchain_api_not_available_in_p0"
+    },
+    "scope": "asset_specific_enrichment",
+    "status": "partial"
+  },
   "excluded_recent_sessions": 20,
-  "generated_at": "2026-08-17T08:48:40.961336+08:00",
+  "generated_at": "2026-08-18T08:48:45.644306+08:00",
   "horizons": {
     "forward_120d": {
-      "median_additional_drawdown": -0.2729819130907412,
-      "median_return": 0.1287872328587616,
+      "median_additional_drawdown": -0.2554104567053288,
+      "median_return": 0.17486719388138527,
       "positive_rate": 0.6111111111111112,
       "sample_count": 18,
       "worst_additional_drawdown": -0.5927311658889094,
       "worst_return": -0.47761871258267896
     },
     "forward_20d": {
-      "median_additional_drawdown": -0.0845811267327844,
-      "median_return": -0.03306914054238619,
-      "positive_rate": 0.35,
+      "median_additional_drawdown": -0.07353435307964806,
+      "median_return": -0.033168551310056915,
+      "positive_rate": 0.45,
       "sample_count": 20,
       "worst_additional_drawdown": -0.4743689141775844,
       "worst_return": -0.3985421963993149
     },
     "forward_60d": {
-      "median_additional_drawdown": -0.22094702672186672,
+      "median_additional_drawdown": -0.18885243657969109,
       "median_return": -0.012051187707240896,
       "positive_rate": 0.47368421052631576,
       "sample_count": 19,
@@ -57,89 +74,90 @@
   "schema_version": "1.0",
   "similar_dates": [
     {
-      "date": "2023-10-14",
-      "distance_score": 0.7836
+      "date": "2026-07-23",
+      "distance_score": 0.8202
     },
     {
-      "date": "2026-05-31",
-      "distance_score": 0.8339
+      "date": "2020-07-24",
+      "distance_score": 0.8349
     },
     {
-      "date": "2026-07-24",
-      "distance_score": 0.8371
+      "date": "2023-10-03",
+      "distance_score": 0.8602
     },
     {
-      "date": "2020-07-16",
-      "distance_score": 0.8885
+      "date": "2026-04-19",
+      "distance_score": 0.8674
     },
     {
       "date": "2022-04-20",
-      "distance_score": 0.9905
+      "distance_score": 0.9707
     },
     {
-      "date": "2026-04-12",
-      "distance_score": 0.992
-    },
-    {
-      "date": "2022-10-24",
-      "distance_score": 1.1662
-    },
-    {
-      "date": "2023-01-01",
-      "distance_score": 1.2018
+      "date": "2026-05-31",
+      "distance_score": 1.0863
     },
     {
       "date": "2026-01-18",
-      "distance_score": 1.2124
+      "distance_score": 1.1492
     },
     {
-      "date": "2020-06-26",
-      "distance_score": 1.2547
-    },
-    {
-      "date": "2023-08-06",
-      "distance_score": 1.2778
-    },
-    {
-      "date": "2020-10-16",
-      "distance_score": 1.3049
-    },
-    {
-      "date": "2018-11-13",
-      "distance_score": 1.3129
-    },
-    {
-      "date": "2020-03-06",
-      "distance_score": 1.3352
-    },
-    {
-      "date": "2023-05-25",
-      "distance_score": 1.3437
-    },
-    {
-      "date": "2020-09-25",
-      "distance_score": 1.4339
-    },
-    {
-      "date": "2018-10-23",
-      "distance_score": 1.4411
+      "date": "2020-10-14",
+      "distance_score": 1.1605
     },
     {
       "date": "2022-03-31",
-      "distance_score": 1.453
+      "distance_score": 1.1819
     },
     {
-      "date": "2019-11-17",
-      "distance_score": 1.4782
+      "date": "2022-10-25",
+      "distance_score": 1.1835
+    },
+    {
+      "date": "2020-07-04",
+      "distance_score": 1.203
+    },
+    {
+      "date": "2023-01-11",
+      "distance_score": 1.2358
+    },
+    {
+      "date": "2020-03-06",
+      "distance_score": 1.2446
+    },
+    {
+      "date": "2023-08-08",
+      "distance_score": 1.2449
     },
     {
       "date": "2020-01-09",
-      "distance_score": 1.4801
+      "distance_score": 1.2987
+    },
+    {
+      "date": "2026-03-25",
+      "distance_score": 1.3231
+    },
+    {
+      "date": "2023-05-26",
+      "distance_score": 1.3554
+    },
+    {
+      "date": "2018-11-13",
+      "distance_score": 1.4047
+    },
+    {
+      "date": "2023-07-05",
+      "distance_score": 1.4249
+    },
+    {
+      "date": "2020-09-24",
+      "distance_score": 1.4721
     }
   ],
-  "snapshot_id": "gsc-20260817T004848607753Z-v1.1.5",
-  "source_api": "market-data.expensesnap.online",
-  "source_as_of": "2026-08-16",
+  "snapshot_id": "gsc-20260818T004853261604Z-v1.1.7",
+  "source_api": "https://market-data.expensesnap.online",
+  "source_as_of": "2026-08-17",
+  "source_generated_at": "2026-08-18T08:48:45.644306+08:00",
   "state_fields": [
     "price_vs_ma20_pct",
     "price_vs_ma60_pct",

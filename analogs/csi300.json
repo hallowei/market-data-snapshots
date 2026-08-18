@@ -1,45 +1,68 @@
 {
-  "as_of": "2026-08-14T15:00:00+08:00",
+  "as_of": "2026-08-17T15:00:00+08:00",
   "asset_id": "csi300",
-  "calculation_version": "1.1.5",
+  "calculation_version": "1.1.7",
   "data_quality": {
-    "fetched_at": "2026-08-17T00:48:30.787099+00:00",
+    "fetched_at": "2026-08-18T00:48:35.096677+00:00",
     "is_proxy": false,
     "missed_sessions": 0,
     "missing_fields": [],
+    "scope": "core_market_series",
     "source": "tushare_pro",
     "source_symbol": "000300.SH",
     "stale": false,
     "status": "complete",
     "warnings": []
   },
-  "distance_score": 1.0271,
+  "distance_score": 1.0367,
+  "enrichment_quality": {
+    "available_fields": [
+      "advancing_count",
+      "declining_count",
+      "total_turnover",
+      "margin_balance_change",
+      "if_basis",
+      "etf_share_change"
+    ],
+    "missing_fields": [
+      "limit_up_count",
+      "limit_down_count",
+      "dividend_vs_growth"
+    ],
+    "reasons": {
+      "dividend_vs_growth": "requires_specialist_data_feed_not_available_in_p0",
+      "limit_down_count": "SOURCE_CLASSIFICATION_MISMATCH:limit_down",
+      "limit_up_count": "SOURCE_CLASSIFICATION_MISMATCH:limit_up"
+    },
+    "scope": "asset_specific_enrichment",
+    "status": "partial"
+  },
   "excluded_recent_sessions": 20,
-  "generated_at": "2026-08-17T08:48:40.961336+08:00",
+  "generated_at": "2026-08-18T08:48:45.644306+08:00",
   "horizons": {
     "forward_120d": {
-      "median_additional_drawdown": -0.1300551606289745,
-      "median_return": -0.0787860688273363,
-      "positive_rate": 0.2777777777777778,
-      "sample_count": 18,
-      "worst_additional_drawdown": -0.2163713262795688,
-      "worst_return": -0.1649558542812697
+      "median_additional_drawdown": -0.11052081407051018,
+      "median_return": -0.05960959638909613,
+      "positive_rate": 0.29411764705882354,
+      "sample_count": 17,
+      "worst_additional_drawdown": -0.22418038797455975,
+      "worst_return": -0.17583311029643123
     },
     "forward_20d": {
-      "median_additional_drawdown": -0.038681061574847464,
-      "median_return": 0.0023473414465972064,
-      "positive_rate": 0.55,
+      "median_additional_drawdown": -0.037948790453462555,
+      "median_return": -0.006892951805119729,
+      "positive_rate": 0.45,
       "sample_count": 20,
       "worst_additional_drawdown": -0.1434938645768078,
-      "worst_return": -0.10002368346760782
+      "worst_return": -0.1093645573414459
     },
     "forward_60d": {
-      "median_additional_drawdown": -0.0892815766444795,
-      "median_return": -0.008227636881827982,
-      "positive_rate": 0.4,
-      "sample_count": 20,
+      "median_additional_drawdown": -0.08019419333551103,
+      "median_return": -0.0029156626543647146,
+      "positive_rate": 0.47368421052631576,
+      "sample_count": 19,
       "worst_additional_drawdown": -0.18642701365516678,
-      "worst_return": -0.1499137455223749
+      "worst_return": -0.13824079150060198
     }
   },
   "min_separation_days": 20,
@@ -49,89 +72,90 @@
   "schema_version": "1.0",
   "similar_dates": [
     {
-      "date": "2021-08-11",
-      "distance_score": 0.5218
+      "date": "2021-08-10",
+      "distance_score": 0.4882
     },
     {
-      "date": "2026-04-01",
-      "distance_score": 0.6504
+      "date": "2026-04-13",
+      "distance_score": 0.5314
     },
     {
-      "date": "2021-09-14",
-      "distance_score": 0.697
+      "date": "2021-09-13",
+      "distance_score": 0.5369
     },
     {
-      "date": "2022-02-16",
-      "distance_score": 0.871
+      "date": "2021-05-14",
+      "distance_score": 0.8263
     },
     {
-      "date": "2021-05-06",
-      "distance_score": 0.8746
+      "date": "2021-04-06",
+      "distance_score": 0.8771
     },
     {
-      "date": "2018-04-11",
-      "distance_score": 0.8859
+      "date": "2018-05-14",
+      "distance_score": 0.9125
     },
     {
-      "date": "2025-01-27",
-      "distance_score": 0.9113
+      "date": "2025-02-06",
+      "distance_score": 0.9557
     },
     {
-      "date": "2018-05-23",
-      "distance_score": 0.9261
+      "date": "2020-04-14",
+      "distance_score": 0.9663
     },
     {
-      "date": "2021-04-01",
-      "distance_score": 0.9708
+      "date": "2019-06-26",
+      "distance_score": 0.9924
     },
     {
-      "date": "2020-04-16",
-      "distance_score": 1.0335
-    },
-    {
-      "date": "2019-06-14",
+      "date": "2022-02-18",
       "distance_score": 1.0695
     },
     {
+      "date": "2018-04-11",
+      "distance_score": 1.0875
+    },
+    {
+      "date": "2025-05-07",
+      "distance_score": 1.1104
+    },
+    {
       "date": "2023-07-14",
-      "distance_score": 1.1157
+      "distance_score": 1.139
     },
     {
-      "date": "2026-03-03",
-      "distance_score": 1.175
+      "date": "2026-03-02",
+      "distance_score": 1.1817
     },
     {
-      "date": "2025-05-06",
-      "distance_score": 1.1811
+      "date": "2017-12-19",
+      "distance_score": 1.3238
     },
     {
-      "date": "2021-06-09",
-      "distance_score": 1.2019
+      "date": "2022-11-29",
+      "distance_score": 1.333
     },
     {
-      "date": "2023-06-09",
-      "distance_score": 1.2585
+      "date": "2026-06-15",
+      "distance_score": 1.3412
     },
     {
-      "date": "2017-12-20",
-      "distance_score": 1.2742
+      "date": "2021-06-11",
+      "distance_score": 1.3442
     },
     {
-      "date": "2023-09-22",
-      "distance_score": 1.2813
+      "date": "2018-06-12",
+      "distance_score": 1.353
     },
     {
-      "date": "2018-07-13",
-      "distance_score": 1.3066
-    },
-    {
-      "date": "2022-11-25",
-      "distance_score": 1.3356
+      "date": "2020-06-08",
+      "distance_score": 1.364
     }
   ],
-  "snapshot_id": "gsc-20260817T004848607753Z-v1.1.5",
-  "source_api": "market-data.expensesnap.online",
-  "source_as_of": "2026-08-14",
+  "snapshot_id": "gsc-20260818T004853261604Z-v1.1.7",
+  "source_api": "https://market-data.expensesnap.online",
+  "source_as_of": "2026-08-17",
+  "source_generated_at": "2026-08-18T08:48:45.644306+08:00",
   "state_fields": [
     "price_vs_ma20_pct",
     "price_vs_ma60_pct",

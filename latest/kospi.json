@@ -27,13 +27,13 @@
       "value": null
     },
     "usdkrw": {
-      "as_of": "2026-08-16",
-      "change_20d": -0.04767413622609795,
-      "change_60d": -0.0636885693599093,
+      "as_of": "2026-08-18",
+      "change_20d": -0.043328542692291694,
+      "change_60d": -0.06845177272273062,
       "is_proxy": true,
-      "sample_count": 566,
+      "sample_count": 567,
       "status": "ok",
-      "value": 1416.47998046875
+      "value": 1411.0999755859375
     }
   },
   "benchmark": "KOSPI",
@@ -57,7 +57,7 @@
     },
     "status": "unavailable"
   },
-  "calculation_version": "1.1.5",
+  "calculation_version": "1.1.7",
   "cross_asset": {
     "credit_hyg_lqd_ratio": {
       "reason": "credit_proxy_not_mapped",
@@ -65,45 +65,50 @@
       "value": null
     },
     "dxy": {
-      "as_of": "2026-08-16",
-      "change_20d": -0.014417282033240109,
-      "change_60d": 0.004278034195021485,
+      "as_of": "2026-08-17",
+      "change_20d": -0.014100366390744856,
+      "change_60d": 0.0046009613452737685,
       "is_proxy": true,
       "sample_count": 550,
       "status": "ok",
-      "value": 99.53399658203125
+      "value": 99.56600189208984
     },
     "is_proxy": true,
     "semis_relative_strength_smh_qqq": {
-      "as_of": "2026-08-14",
-      "change_20d": 0.0045875302293334475,
-      "change_60d": 0.03696638549292386,
-      "is_proxy": true,
-      "sample_count": 547,
-      "status": "ok",
-      "value": 0.804054331322582
-    },
-    "vix": {
-      "as_of": "2026-08-14",
-      "change_20d": -0.24080982139209828,
-      "change_60d": -0.18291286905800497,
+      "as_of": "2026-08-17",
+      "change_20d": 0.013815841247217797,
+      "change_60d": 0.027983090857854,
       "is_proxy": true,
       "sample_count": 548,
       "status": "ok",
-      "value": 14.25
+      "value": 0.8139394686725034
+    },
+    "vix": {
+      "as_of": "2026-08-17",
+      "change_20d": -0.18552279404387684,
+      "change_60d": -0.09367545507505515,
+      "is_proxy": true,
+      "sample_count": 549,
+      "status": "ok",
+      "value": 15.1899995803833
     }
   },
   "currency": "KRW",
   "data_quality": {
-    "fetched_at": "2026-08-17T00:48:26.180523+00:00",
+    "fetched_at": "2026-08-18T00:48:28.452818+00:00",
     "is_proxy": false,
-    "missed_sessions": 0,
+    "missed_sessions": 1,
     "missing_fields": [],
+    "scope": "core_market_series",
     "source": "yahoo_public",
     "source_symbol": "^KS11",
     "stale": false,
-    "status": "complete",
-    "warnings": []
+    "status": "partial",
+    "warnings": [
+      "finance_data_reader_krx_gap_fill_no_missing_rows",
+      "akshare_sina_fallback_no_missing_rows",
+      "latest_completed_session_not_observed:1"
+    ]
   },
   "disclaimer": "Descriptive market statistics only. Not investment advice, not a recommendation, and not a forecast.",
   "downside_nature": {
@@ -159,7 +164,20 @@
     "max_drawdown_3y": -0.3863043,
     "rolling_high": 9114.54980469
   },
-  "generated_at": "2026-08-17T08:48:40.961336+08:00",
+  "enrichment_quality": {
+    "available_fields": [],
+    "missing_fields": [
+      "foreign_net_flow",
+      "sox_confirmation"
+    ],
+    "reasons": {
+      "foreign_net_flow": "requires_official_statistics_feed_not_available_in_p0",
+      "sox_confirmation": "requires_specialist_data_feed_not_available_in_p0"
+    },
+    "scope": "asset_specific_enrichment",
+    "status": "unavailable"
+  },
+  "generated_at": "2026-08-18T08:48:45.644306+08:00",
   "historical_analogs": {
     "distance_score": 5.5582,
     "excluded_recent_sessions": 20,
@@ -658,9 +676,10 @@
     "return_60d": -0.04039246
   },
   "schema_version": "1.0",
-  "snapshot_id": "gsc-20260817T004848607753Z-v1.1.5",
-  "source_api": "market-data.expensesnap.online",
+  "snapshot_id": "gsc-20260818T004853261604Z-v1.1.7",
+  "source_api": "https://market-data.expensesnap.online",
   "source_as_of": "2026-08-14",
+  "source_generated_at": "2026-08-18T08:48:45.644306+08:00",
   "timezone": "Asia/Seoul",
   "trade_proxy": "EWY",
   "trend": {
