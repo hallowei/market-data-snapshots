@@ -18,27 +18,6 @@
           "multiple_sources_in_one_series"
         ]
       },
-      "enrichment_quality": {
-        "available_fields": [
-          "funding_rate",
-          "futures_basis",
-          "open_interest"
-        ],
-        "missing_fields": [
-          "etf_net_flow",
-          "liquidation_volume",
-          "stablecoin_supply_change",
-          "exchange_netflow"
-        ],
-        "reasons": {
-          "etf_net_flow": "requires_specialist_data_feed_not_available_in_p0",
-          "exchange_netflow": "requires_exchange_or_onchain_api_not_available_in_p0",
-          "liquidation_volume": "requires_exchange_or_onchain_api_not_available_in_p0",
-          "stablecoin_supply_change": "requires_exchange_or_onchain_api_not_available_in_p0"
-        },
-        "scope": "asset_specific_enrichment",
-        "status": "partial"
-      },
       "source_as_of": "2026-08-31"
     },
     "csi300": {
@@ -59,33 +38,6 @@
           "multiple_sources_in_one_series"
         ]
       },
-      "enrichment_quality": {
-        "available_fields": [],
-        "missing_fields": [
-          "advancing_count",
-          "declining_count",
-          "total_turnover",
-          "limit_up_count",
-          "limit_down_count",
-          "margin_balance_change",
-          "if_basis",
-          "etf_share_change",
-          "dividend_vs_growth"
-        ],
-        "reasons": {
-          "advancing_count": "PROVIDER_UNAVAILABLE:all_a_share_daily",
-          "declining_count": "PROVIDER_UNAVAILABLE:all_a_share_daily",
-          "dividend_vs_growth": "requires_specialist_data_feed_not_available_in_p0",
-          "etf_share_change": "PROVIDER_UNAVAILABLE:fund_share",
-          "if_basis": "PROVIDER_UNAVAILABLE:fut_daily",
-          "limit_down_count": "PROVIDER_UNAVAILABLE:limit_down",
-          "limit_up_count": "PROVIDER_UNAVAILABLE:limit_up",
-          "margin_balance_change": "PROVIDER_UNAVAILABLE:margin",
-          "total_turnover": "PROVIDER_UNAVAILABLE:all_a_share_daily"
-        },
-        "scope": "asset_specific_enrichment",
-        "status": "unavailable"
-      },
       "source_as_of": "2026-08-31"
     },
     "gold": {
@@ -103,21 +55,6 @@
         "stale": false,
         "status": "partial",
         "warnings": []
-      },
-      "enrichment_quality": {
-        "available_fields": [
-          "real_yield"
-        ],
-        "missing_fields": [
-          "gold_etf_flow",
-          "central_bank_purchase_proxy"
-        ],
-        "reasons": {
-          "central_bank_purchase_proxy": "requires_official_statistics_feed_not_available_in_p0",
-          "gold_etf_flow": "requires_specialist_data_feed_not_available_in_p0"
-        },
-        "scope": "asset_specific_enrichment",
-        "status": "partial"
       },
       "source_as_of": "2026-08-31"
     },
@@ -139,19 +76,6 @@
           "multiple_sources_in_one_series"
         ]
       },
-      "enrichment_quality": {
-        "available_fields": [],
-        "missing_fields": [
-          "foreign_net_flow",
-          "sox_confirmation"
-        ],
-        "reasons": {
-          "foreign_net_flow": "requires_official_statistics_feed_not_available_in_p0",
-          "sox_confirmation": "requires_specialist_data_feed_not_available_in_p0"
-        },
-        "scope": "asset_specific_enrichment",
-        "status": "unavailable"
-      },
       "source_as_of": "2026-08-31"
     },
     "nasdaq100": {
@@ -167,23 +91,6 @@
         "stale": false,
         "status": "complete",
         "warnings": []
-      },
-      "enrichment_quality": {
-        "available_fields": [
-          "us_real_yield"
-        ],
-        "missing_fields": [
-          "advance_decline_line",
-          "pct_above_ma200_point_in_time",
-          "new_highs_new_lows"
-        ],
-        "reasons": {
-          "advance_decline_line": "not_provided",
-          "new_highs_new_lows": "not_provided",
-          "pct_above_ma200_point_in_time": "not_provided"
-        },
-        "scope": "asset_specific_enrichment",
-        "status": "partial"
       },
       "source_as_of": "2026-08-31"
     },
@@ -204,19 +111,6 @@
           "multiple_sources_in_one_series"
         ]
       },
-      "enrichment_quality": {
-        "available_fields": [],
-        "missing_fields": [
-          "foreign_net_flow",
-          "sox_confirmation"
-        ],
-        "reasons": {
-          "foreign_net_flow": "requires_official_statistics_feed_not_available_in_p0",
-          "sox_confirmation": "requires_specialist_data_feed_not_available_in_p0"
-        },
-        "scope": "asset_specific_enrichment",
-        "status": "unavailable"
-      },
       "source_as_of": "2026-08-31"
     },
     "sp500": {
@@ -232,23 +126,6 @@
         "stale": false,
         "status": "complete",
         "warnings": []
-      },
-      "enrichment_quality": {
-        "available_fields": [
-          "us_real_yield"
-        ],
-        "missing_fields": [
-          "advance_decline_line",
-          "pct_above_ma200_point_in_time",
-          "new_highs_new_lows"
-        ],
-        "reasons": {
-          "advance_decline_line": "not_provided",
-          "new_highs_new_lows": "not_provided",
-          "pct_above_ma200_point_in_time": "not_provided"
-        },
-        "scope": "asset_specific_enrichment",
-        "status": "partial"
       },
       "source_as_of": "2026-08-31"
     },
@@ -272,175 +149,82 @@
           "extreme_daily_moves_flagged_for_review:3"
         ]
       },
-      "enrichment_quality": {
-        "available_fields": [
-          "crude_inventory",
-          "product_inventory",
-          "crack_spread"
-        ],
-        "missing_fields": [
-          "second_month_price",
-          "calendar_spread",
-          "contango_backwardation"
-        ],
-        "reasons": {
-          "calendar_spread": "requires_specialist_data_feed_not_available_in_p0",
-          "contango_backwardation": "requires_specialist_data_feed_not_available_in_p0",
-          "second_month_price": "requires_specialist_data_feed_not_available_in_p0"
-        },
-        "scope": "asset_specific_enrichment",
-        "status": "partial"
-      },
       "source_as_of": "2026-08-31"
     }
   },
   "calculation_version": "1.1.9",
-  "data_quality": {
-    "is_proxy": true,
-    "missed_sessions": 0,
-    "missing_fields": [
-      "front_month_continuous_not_spot: roll dates introduce small artificial gaps; USO is NOT used for WTI history because its roll decay and expense ratio make long-horizon USO returns diverge sharply from WTI",
-      "gold_futures_used_as_xauusd_proxy: no key-free XAU/USD spot feed is available in P0; futures track spot closely but are not identical"
-    ],
-    "scope": "core_market_series",
-    "stale": false,
-    "status": "partial",
-    "warnings": [
-      "akshare_sina_gap_filled:2",
-      "extreme_daily_moves_flagged_for_review:1",
-      "extreme_daily_moves_flagged_for_review:3",
-      "finance_data_reader_krx_gap_filled:2",
-      "multiple_sources_in_one_series",
-      "non_positive_close:1",
-      "tushare_primary_unavailable_public_fallback",
-      "volume_scale_shift_ratio:0.0179",
-      "volume_scale_shift_ratio:1.13e+03",
-      "volume_scale_shift_ratio:1.1e+04"
-    ]
-  },
-  "disclaimer": "Market and strategy-state data only. No order placement, account access, position sizing, or execution instruction is provided.",
-  "enrichment_quality": {
-    "complete_assets": [],
-    "missing_fields": [
-      "btc.etf_net_flow",
-      "btc.exchange_netflow",
-      "btc.liquidation_volume",
-      "btc.stablecoin_supply_change",
-      "csi300.advancing_count",
-      "csi300.declining_count",
-      "csi300.dividend_vs_growth",
-      "csi300.etf_share_change",
-      "csi300.if_basis",
-      "csi300.limit_down_count",
-      "csi300.limit_up_count",
-      "csi300.margin_balance_change",
-      "csi300.total_turnover",
-      "gold.central_bank_purchase_proxy",
-      "gold.gold_etf_flow",
-      "kospi.foreign_net_flow",
-      "kospi.sox_confirmation",
-      "nasdaq100.advance_decline_line",
-      "nasdaq100.new_highs_new_lows",
-      "nasdaq100.pct_above_ma200_point_in_time",
-      "nikkei225.foreign_net_flow",
-      "nikkei225.sox_confirmation",
-      "sp500.advance_decline_line",
-      "sp500.new_highs_new_lows",
-      "sp500.pct_above_ma200_point_in_time",
-      "wti.calendar_spread",
-      "wti.contango_backwardation",
-      "wti.second_month_price"
-    ],
-    "partial_assets": [
-      "btc",
-      "gold",
-      "nasdaq100",
-      "sp500",
-      "wti"
-    ],
-    "scope": "asset_specific_enrichment",
-    "status": "partial",
-    "unavailable_assets": [
-      "csi300",
-      "kospi",
-      "nikkei225"
-    ]
-  },
   "files": {
     "analogs/btc.json": {
-      "bytes": 4269,
-      "sha256": "772602a27b6c64808af43aed782d1b1d91b1a1ab873e73301c33f99e5ee1126f"
+      "bytes": 4200,
+      "sha256": "ed1ffeca4722e2dc931b4bdd0c3250e6c990727da2cd9b1f080c595c880bf484"
     },
     "analogs/csi300.json": {
-      "bytes": 4651,
-      "sha256": "c977db77f96e4e4ada73775c568dcf1690cf00938b7a7b2649c0861fd328442c"
+      "bytes": 4582,
+      "sha256": "ae7cbbbaadbd9bb058736fec72d15a1589f85716e8a891502ee85e0da7cc9bbe"
     },
     "analogs/gold.json": {
-      "bytes": 4060,
-      "sha256": "cfac5a64531d828ad1c9ebf408517a81e468b5fd7ae2e7541563161a566cc66f"
+      "bytes": 3991,
+      "sha256": "73a4526d8956290113fef8e46be285f7f3c55810ad70f68c1347c1cf43b76d35"
     },
     "analogs/kospi.json": {
-      "bytes": 4047,
-      "sha256": "a4d429dcf9b26a92cd76552a79deb674d0ba250762474d048ef9b81fd432a4ac"
+      "bytes": 3978,
+      "sha256": "6cce8b0addfed64d55cde65e9e55bc210f6fa6f9fba687a065694a9528af59d3"
     },
     "analogs/nasdaq100.json": {
-      "bytes": 3934,
-      "sha256": "af30b43c2d38f2a2be33283d4743f2945ba403b940362b8ce45ffa814f8ade43"
+      "bytes": 3865,
+      "sha256": "b28e9eb63e7c42b28b6b5ee303d50345bd006b6aa1468f2962a083a86daad1cf"
     },
     "analogs/nikkei225.json": {
-      "bytes": 3999,
-      "sha256": "d59373ad0a6673e1218750669c95c245ddcf41485ae2ad736de706b06ae242f9"
+      "bytes": 3930,
+      "sha256": "92b446fcab1783ddad31f52d3b473e6583e96e36b03dd809e2785aab69f9375e"
     },
     "analogs/sp500.json": {
-      "bytes": 3928,
-      "sha256": "b0ea02b99086d020e099b2423fe7ce5019108618ef6671e838b04cea6d385060"
+      "bytes": 3859,
+      "sha256": "11b0fffc0fad416ce3cd2e5e2d36b90cb31df4ad32a21b10b1a4503bcebae21a"
     },
     "analogs/wti.json": {
-      "bytes": 4409,
-      "sha256": "bf1731e44a62d0a4b3dc3023fc26f13f98c93002710c52e3e32e82260ea9e59e"
+      "bytes": 4340,
+      "sha256": "274b1247af195025fd5712cd61cec30368af6c22417f331bf05c61b1c46e0cd2"
     },
     "latest/all-assets.json": {
-      "bytes": 14201,
-      "sha256": "3ba03a837fdfad32d364d058c6120046227e6857e6bbb9dbbc55d83d92f1a382"
+      "bytes": 14078,
+      "sha256": "70740ddd99793e747f5209db4968b1b23e76f0c0d25ef23f8e76280e0f380b82"
     },
     "latest/btc.json": {
-      "bytes": 21310,
-      "sha256": "40626c1366ebce11c19f3efe023ea0526c5ba85df7625cc5a02eb8872dda8fa6"
+      "bytes": 21241,
+      "sha256": "9db7553676299e664e06461dca2ec97768dc99cc23ca0cef2d80b2e76b801206"
     },
     "latest/csi300.json": {
-      "bytes": 22732,
-      "sha256": "559b8ca7b37a6c44c4dc018986f75750d42ba9659990c78fe4ef15f370eabfd0"
+      "bytes": 22663,
+      "sha256": "3e00134ec65b5dc32bfaf7de6eee073403607ffc4bf5b2a7e5cc8c6e2033cb84"
     },
     "latest/gold.json": {
-      "bytes": 20225,
-      "sha256": "532749ea0e8415bca5ba812ccf6df96ceabd5bf6896c8108aa814fd03360316d"
+      "bytes": 20156,
+      "sha256": "ac8756db6a0692b327d0a6fc4f4da6e2b6be0912bfc8341ec354a1abebc26b3a"
     },
     "latest/kospi.json": {
-      "bytes": 19544,
-      "sha256": "6a07db14333dbf438e1753d520433d8cc5be946439d0cf5db00c366caf98a7e8"
+      "bytes": 19475,
+      "sha256": "6a973bcce8872e48cc499c39066caa151653c5eb76d9ade65d8e0257fb90fbf8"
     },
     "latest/nasdaq100.json": {
-      "bytes": 19889,
-      "sha256": "cb2351e2e31c65b282f6bd99ac68040ce4dca9cd0e9a5b9899c9c2f5370872c3"
+      "bytes": 19820,
+      "sha256": "0bc5935da628c8e60c0c3f1579977ca6e9e614e36e85c3d091daf43f786d4b03"
     },
     "latest/nikkei225.json": {
-      "bytes": 19362,
-      "sha256": "af3d66a8428cfa3d2125df558f2c6a0381548f2ead97ea51a7cd7717c8837017"
+      "bytes": 19293,
+      "sha256": "3a9665259219c811a4e16fd38e68db3dbc6451a66324bf5d1485a8acfe41c8f1"
     },
     "latest/sp500.json": {
-      "bytes": 19949,
-      "sha256": "20cf349e0d90d883ed9bcd7b6d30d51c1c33c39ed5b4689a0f89b44357907c51"
+      "bytes": 19880,
+      "sha256": "45fdbbb690ef93b77da2c5a79c21d8da3e7c87b0b23ccb2f81c90166bfcebe41"
     },
     "latest/wti.json": {
-      "bytes": 22700,
-      "sha256": "45977bfa433498f35e34a959ef992d567d5d47be41e20374c05e0762d2927755"
+      "bytes": 22631,
+      "sha256": "9216e82f9a997a082f70ee69c038ac5aaf4846ec60df0038800c3f8f0bf2715a"
     }
   },
-  "generated_at": "2026-09-01T08:48:43.691707+08:00",
-  "mirror_generated_at": "2026-09-01T08:53:04.752256+08:00",
+  "generated_at": "2026-09-01T13:05:09.068748+08:00",
   "schema_version": "1.0",
-  "source_api": "https://market-data.expensesnap.online",
-  "source_as_of": "2026-08-31",
-  "source_generated_at": "2026-09-01T08:48:43.691707+08:00",
-  "source_snapshot_id": "gsc-20260901T004853451575Z-v1.1.9"
+  "source_api": "market-data.expensesnap.online",
+  "source_as_of": "2026-08-31"
 }
