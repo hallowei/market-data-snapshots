@@ -1,68 +1,77 @@
 {
-  "as_of": "2026-08-28T15:00:00+08:00",
+  "as_of": "2026-08-31T15:00:00+08:00",
   "asset_id": "csi300",
   "calculation_version": "1.1.9",
   "data_quality": {
-    "fetched_at": "2026-08-31T00:48:41.620648+00:00",
+    "fetched_at": "2026-09-01T00:48:32.819462+00:00",
     "is_proxy": false,
     "missed_sessions": 0,
     "missing_fields": [],
     "scope": "core_market_series",
-    "source": "tushare_pro",
-    "source_symbol": "000300.SH",
+    "source": "yahoo_public+tencent_public",
+    "source_symbol": "000300.SS+sh000300",
     "stale": false,
-    "status": "complete",
-    "warnings": []
+    "status": "partial",
+    "warnings": [
+      "tushare_primary_unavailable_public_fallback",
+      "volume_scale_shift_ratio:1.1e+04",
+      "multiple_sources_in_one_series"
+    ]
   },
-  "distance_score": 0.9407,
+  "distance_score": 0.9409,
   "enrichment_quality": {
-    "available_fields": [
+    "available_fields": [],
+    "missing_fields": [
       "advancing_count",
       "declining_count",
       "total_turnover",
-      "margin_balance_change",
-      "if_basis",
-      "etf_share_change"
-    ],
-    "missing_fields": [
       "limit_up_count",
       "limit_down_count",
+      "margin_balance_change",
+      "if_basis",
+      "etf_share_change",
       "dividend_vs_growth"
     ],
     "reasons": {
+      "advancing_count": "PROVIDER_UNAVAILABLE:all_a_share_daily",
+      "declining_count": "PROVIDER_UNAVAILABLE:all_a_share_daily",
       "dividend_vs_growth": "requires_specialist_data_feed_not_available_in_p0",
-      "limit_down_count": "SOURCE_CLASSIFICATION_MISMATCH:limit_down",
-      "limit_up_count": "SOURCE_CLASSIFICATION_MISMATCH:limit_up"
+      "etf_share_change": "PROVIDER_UNAVAILABLE:fund_share",
+      "if_basis": "PROVIDER_UNAVAILABLE:fut_daily",
+      "limit_down_count": "PROVIDER_UNAVAILABLE:limit_down",
+      "limit_up_count": "PROVIDER_UNAVAILABLE:limit_up",
+      "margin_balance_change": "PROVIDER_UNAVAILABLE:margin",
+      "total_turnover": "PROVIDER_UNAVAILABLE:all_a_share_daily"
     },
     "scope": "asset_specific_enrichment",
-    "status": "partial"
+    "status": "unavailable"
   },
   "excluded_recent_sessions": 20,
-  "generated_at": "2026-08-31T08:48:52.325979+08:00",
+  "generated_at": "2026-09-01T08:48:43.691707+08:00",
   "horizons": {
     "forward_120d": {
-      "median_additional_drawdown": -0.1411941673015732,
-      "median_return": -0.045669574143797353,
-      "positive_rate": 0.2631578947368421,
+      "median_additional_drawdown": -0.11854413897097216,
+      "median_return": -0.06315869231879989,
+      "positive_rate": 0.3684210526315789,
       "sample_count": 19,
       "worst_additional_drawdown": -0.2163713262795688,
-      "worst_return": -0.17387352470859074
+      "worst_return": -0.1840322424443409
     },
     "forward_20d": {
-      "median_additional_drawdown": -0.041005675750520054,
-      "median_return": -0.006431249598998767,
+      "median_additional_drawdown": -0.039911340567412024,
+      "median_return": -0.006878411917893956,
       "positive_rate": 0.45,
       "sample_count": 20,
       "worst_additional_drawdown": -0.1434938645768078,
-      "worst_return": -0.08456585765609681
+      "worst_return": -0.125235234218958
     },
     "forward_60d": {
-      "median_additional_drawdown": -0.09664135790617107,
+      "median_additional_drawdown": -0.09833234070630142,
       "median_return": -0.019861414611340278,
-      "positive_rate": 0.35,
+      "positive_rate": 0.4,
       "sample_count": 20,
       "worst_additional_drawdown": -0.18642701365516678,
-      "worst_return": -0.13600001589919597
+      "worst_return": -0.12332980409206529
     }
   },
   "min_separation_days": 20,
@@ -73,88 +82,89 @@
   "similar_dates": [
     {
       "date": "2021-09-24",
-      "distance_score": 0.5247
+      "distance_score": 0.5506
     },
     {
-      "date": "2022-02-17",
-      "distance_score": 0.5792
+      "date": "2022-02-18",
+      "distance_score": 0.5988
     },
     {
       "date": "2021-08-25",
-      "distance_score": 0.6222
-    },
-    {
-      "date": "2026-04-01",
-      "distance_score": 0.6562
+      "distance_score": 0.6052
     },
     {
       "date": "2018-04-11",
-      "distance_score": 0.6577
+      "distance_score": 0.6562
     },
     {
-      "date": "2018-05-31",
-      "distance_score": 0.7325
+      "date": "2026-04-01",
+      "distance_score": 0.6991
     },
     {
       "date": "2021-05-06",
-      "distance_score": 0.7456
+      "distance_score": 0.7375
+    },
+    {
+      "date": "2018-06-05",
+      "distance_score": 0.7581
+    },
+    {
+      "date": "2023-07-14",
+      "distance_score": 0.8721
     },
     {
       "date": "2025-01-27",
-      "distance_score": 0.8763
-    },
-    {
-      "date": "2023-07-17",
-      "distance_score": 0.8985
+      "distance_score": 0.8833
     },
     {
       "date": "2023-06-13",
-      "distance_score": 0.9556
+      "distance_score": 0.9348
     },
     {
       "date": "2019-06-17",
-      "distance_score": 0.9892
+      "distance_score": 0.9837
     },
     {
-      "date": "2023-09-27",
-      "distance_score": 1.0273
-    },
-    {
-      "date": "2022-08-31",
-      "distance_score": 1.0604
+      "date": "2023-09-22",
+      "distance_score": 1.0347
     },
     {
       "date": "2020-04-21",
-      "distance_score": 1.063
+      "distance_score": 1.0762
     },
     {
-      "date": "2026-03-03",
+      "date": "2022-08-31",
+      "distance_score": 1.0795
+    },
+    {
+      "date": "2026-02-13",
+      "distance_score": 1.1579
+    },
+    {
+      "date": "2021-06-10",
       "distance_score": 1.1879
     },
     {
-      "date": "2021-06-11",
-      "distance_score": 1.2145
+      "date": "2017-12-19",
+      "distance_score": 1.2299
     },
     {
       "date": "2021-04-01",
-      "distance_score": 1.2281
+      "distance_score": 1.2308
     },
     {
-      "date": "2017-12-20",
-      "distance_score": 1.2503
+      "date": "2023-11-15",
+      "distance_score": 1.265
     },
     {
       "date": "2025-04-02",
-      "distance_score": 1.2568
-    },
-    {
-      "date": "2018-07-12",
-      "distance_score": 1.2877
+      "distance_score": 1.2777
     }
   ],
-  "snapshot_id": "gsc-20260831T004902236916Z-v1.1.9",
-  "source_api": "market-data.expensesnap.online",
-  "source_as_of": "2026-08-28",
+  "snapshot_id": "gsc-20260901T004853451575Z-v1.1.9",
+  "source_api": "https://market-data.expensesnap.online",
+  "source_as_of": "2026-08-31",
+  "source_generated_at": "2026-09-01T08:48:43.691707+08:00",
   "state_fields": [
     "price_vs_ma20_pct",
     "price_vs_ma60_pct",
