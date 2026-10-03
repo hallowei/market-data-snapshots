@@ -3,9 +3,9 @@
   "asset_id": "kospi",
   "calculation_version": "1.1.9",
   "data_quality": {
-    "fetched_at": "2026-10-02T00:48:37.033795+00:00",
+    "fetched_at": "2026-10-03T00:48:44.113064+00:00",
     "is_proxy": false,
-    "missed_sessions": 0,
+    "missed_sessions": 1,
     "missing_fields": [],
     "scope": "core_market_series",
     "source": "yahoo_public+akshare_sina",
@@ -15,6 +15,9 @@
     "warnings": [
       "finance_data_reader_krx_gap_fill_no_missing_rows",
       "akshare_sina_gap_filled:1",
+      "non_positive_close:1",
+      "extreme_daily_moves_flagged_for_review:1",
+      "recent_asset_moves_require_cross_source_review:1",
       "multiple_sources_in_one_series"
     ]
   },
@@ -33,7 +36,7 @@
     "status": "unavailable"
   },
   "excluded_recent_sessions": 20,
-  "generated_at": "2026-10-02T08:48:55.913995+08:00",
+  "generated_at": "2026-10-03T08:49:05.262165+08:00",
   "horizons": {
     "forward_120d": {
       "median_additional_drawdown": -0.12207941406620432,
@@ -147,9 +150,10 @@
       "distance_score": 2.7518
     }
   ],
-  "snapshot_id": "gsc-20261002T004914077882Z-v1.1.9",
-  "source_api": "market-data.expensesnap.online",
+  "snapshot_id": "gsc-20261003T004920929499Z-v1.1.9",
+  "source_api": "https://market-data.expensesnap.online",
   "source_as_of": "2026-10-01",
+  "source_generated_at": "2026-10-03T08:49:05.262165+08:00",
   "state_fields": [
     "price_vs_ma20_pct",
     "price_vs_ma60_pct",
