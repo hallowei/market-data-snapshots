@@ -26,13 +26,13 @@
       "value": null
     },
     "usdjpy": {
-      "as_of": "2026-11-23",
-      "change_20d": 0.013065076501669548,
-      "change_60d": -0.0077628074983645545,
+      "as_of": "2026-11-24",
+      "change_20d": 0.009496738347626321,
+      "change_60d": -0.004525856325505617,
       "is_proxy": true,
-      "sample_count": 566,
+      "sample_count": 567,
       "status": "ok",
-      "value": 158.87899780273438
+      "value": 159.0240020751953
     }
   },
   "benchmark": "Nikkei 225",
@@ -64,39 +64,39 @@
       "value": null
     },
     "dxy": {
-      "as_of": "2026-11-22",
-      "change_20d": 0.017997245007352225,
-      "change_60d": 0.041073233159966804,
+      "as_of": "2026-11-23",
+      "change_20d": 0.023116930948067438,
+      "change_60d": 0.046308972275376226,
       "is_proxy": true,
       "sample_count": 552,
       "status": "ok",
-      "value": 103.79499816894531
+      "value": 104.31700134277344
     },
     "is_proxy": true,
     "semis_relative_strength_smh_qqq": {
-      "as_of": "2026-11-20",
-      "change_20d": -0.12149511476648256,
-      "change_60d": -0.17253976652544722,
+      "as_of": "2026-11-23",
+      "change_20d": -0.07053291550185636,
+      "change_60d": -0.0844354030905593,
       "is_proxy": true,
-      "sample_count": 549,
+      "sample_count": 550,
       "status": "ok",
-      "value": 0.6575067795217355
+      "value": 0.7068491467367095
     },
     "vix": {
-      "as_of": "2026-11-20",
-      "change_20d": 0.8452441121768073,
-      "change_60d": 1.473466493695168,
+      "as_of": "2026-11-23",
+      "change_20d": 0.44752592293274107,
+      "change_60d": 0.7841823527554348,
       "is_proxy": true,
-      "sample_count": 549,
+      "sample_count": 552,
       "status": "ok",
-      "value": 35.88999938964844
+      "value": 26.6200008392334
     }
   },
   "currency": "JPY",
   "data_quality": {
-    "fetched_at": "2026-11-23T00:48:20.741862+00:00",
+    "fetched_at": "2026-11-24T00:48:26.129722+00:00",
     "is_proxy": false,
-    "missed_sessions": 0,
+    "missed_sessions": 1,
     "missing_fields": [],
     "scope": "core_market_series",
     "source": "yahoo_public",
@@ -104,7 +104,9 @@
     "stale": false,
     "status": "partial",
     "warnings": [
-      "multiple_sources_in_one_series"
+      "akshare_sina_fallback_no_missing_rows",
+      "multiple_sources_in_one_series",
+      "latest_completed_session_not_observed:1"
     ]
   },
   "disclaimer": "Descriptive market statistics only. Not investment advice, not a recommendation, and not a forecast.",
@@ -175,7 +177,7 @@
     "scope": "asset_specific_enrichment",
     "status": "unavailable"
   },
-  "generated_at": "2026-11-23T08:48:44.278083+08:00",
+  "generated_at": "2026-11-24T08:48:56.668105+08:00",
   "historical_analogs": {
     "distance_score": 2.4183,
     "excluded_recent_sessions": 20,
@@ -656,15 +658,14 @@
       "credit_spread_proxy_unavailable",
       "breadth_confirmation_unavailable"
     ],
-    "panic_level": "deep_panic",
-    "score": 76,
+    "panic_level": "risk_release",
+    "score": 68,
     "thresholds_are_empirical_conventions": true,
     "verified_evidence": [
       "5d_decline_-7.7%",
       "realized_vol_20d_at_93%_of_full_history",
       "drawdown_-22.0%",
-      "drawdown_deepened_rapidly_over_20_sessions",
-      "volatility_index_at_36"
+      "drawdown_deepened_rapidly_over_20_sessions"
     ]
   },
   "price": {
@@ -677,9 +678,10 @@
     "return_60d": -0.14511117
   },
   "schema_version": "1.0",
-  "snapshot_id": "gsc-20261123T004858115422Z-v1.1.9",
-  "source_api": "market-data.expensesnap.online",
+  "snapshot_id": "gsc-20261124T004913915400Z-v1.1.9",
+  "source_api": "https://market-data.expensesnap.online",
   "source_as_of": "2026-11-20",
+  "source_generated_at": "2026-11-24T08:48:56.668105+08:00",
   "timezone": "Asia/Tokyo",
   "trade_proxy": "EWJ",
   "trend": {
