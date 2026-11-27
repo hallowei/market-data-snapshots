@@ -23,7 +23,7 @@
       "change_20d": -0.1980562537280255,
       "change_60d": -0.17641964613222372,
       "is_proxy": true,
-      "sample_count": 551,
+      "sample_count": 550,
       "status": "ok",
       "value": 0.5894516534114692
     },
@@ -32,7 +32,7 @@
       "frequency": "D",
       "is_proxy": false,
       "provider": "fred_alfred",
-      "retrieved_at": "2026-11-26T00:35:22.901459+00:00",
+      "retrieved_at": "2026-11-27T00:35:23.138524+00:00",
       "source_series_id": "DFII10",
       "status": "ok",
       "units": "%",
@@ -80,18 +80,18 @@
       "change_20d": -0.01587084830212937,
       "change_60d": -0.023990358500238673,
       "is_proxy": true,
-      "sample_count": 551,
+      "sample_count": 550,
       "status": "ok",
       "value": 0.7337232716463706
     },
     "dxy": {
-      "as_of": "2026-11-25",
-      "change_20d": 0.014737221529719235,
-      "change_60d": 0.04039330842304456,
+      "as_of": "2026-11-26",
+      "change_20d": 0.017022731243962808,
+      "change_60d": 0.042356397871248674,
       "is_proxy": true,
       "sample_count": 553,
       "status": "ok",
-      "value": 103.69599914550781
+      "value": 103.7770004272461
     },
     "is_proxy": true,
     "semis_relative_strength_smh_qqq": {
@@ -99,32 +99,34 @@
       "change_20d": -0.1481725993329709,
       "change_60d": -0.13506218397492398,
       "is_proxy": true,
-      "sample_count": 551,
+      "sample_count": 550,
       "status": "ok",
       "value": 0.6664142728692443
     },
     "vix": {
-      "as_of": "2026-11-25",
-      "change_20d": 0.6729746404969259,
-      "change_60d": 0.8611842941131629,
+      "as_of": "2026-11-26",
+      "change_20d": 0.5581394214124715,
+      "change_60d": 0.8715083664943837,
       "is_proxy": true,
       "sample_count": 553,
       "status": "ok",
-      "value": 28.290000915527344
+      "value": 26.799999237060547
     }
   },
   "currency": "USD",
   "data_quality": {
-    "fetched_at": "2026-11-26T00:48:12.078985+00:00",
+    "fetched_at": "2026-11-27T00:48:11.500321+00:00",
     "is_proxy": false,
-    "missed_sessions": 0,
+    "missed_sessions": 1,
     "missing_fields": [],
     "scope": "core_market_series",
     "source": "yahoo_public",
     "source_symbol": "^GSPC",
     "stale": false,
-    "status": "complete",
-    "warnings": []
+    "status": "partial",
+    "warnings": [
+      "latest_completed_session_not_observed:1"
+    ]
   },
   "disclaimer": "Descriptive market statistics only. Not investment advice, not a recommendation, and not a forecast.",
   "downside_nature": {
@@ -195,7 +197,7 @@
     "scope": "asset_specific_enrichment",
     "status": "partial"
   },
-  "generated_at": "2026-11-26T08:48:50.803825+08:00",
+  "generated_at": "2026-11-27T08:48:45.223396+08:00",
   "historical_analogs": {
     "distance_score": 1.6263,
     "excluded_recent_sessions": 20,
@@ -674,11 +676,10 @@
   "panic": {
     "missing_confirmation": [],
     "panic_level": "normal_volatility",
-    "score": 32,
+    "score": 24,
     "thresholds_are_empirical_conventions": true,
     "verified_evidence": [
-      "realized_vol_20d_at_96%_of_full_history",
-      "volatility_index_at_28"
+      "realized_vol_20d_at_96%_of_full_history"
     ]
   },
   "price": {
@@ -691,9 +692,10 @@
     "return_60d": -0.05879476
   },
   "schema_version": "1.0",
-  "snapshot_id": "gsc-20261126T004905231809Z-v1.1.9",
-  "source_api": "market-data.expensesnap.online",
+  "snapshot_id": "gsc-20261127T004900554016Z-v1.1.9",
+  "source_api": "https://market-data.expensesnap.online",
   "source_as_of": "2026-11-25",
+  "source_generated_at": "2026-11-27T08:48:45.223396+08:00",
   "timezone": "America/New_York",
   "trade_proxy": "SPY",
   "trend": {
@@ -739,6 +741,6 @@
     "realized_vol_60d": 0.20098888
   },
   "volume": {
-    "volume": 3465619000.0
+    "volume": 5520150000.0
   }
 }
